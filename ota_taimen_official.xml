@@ -1,1 +1,12 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<Updates>
+    <Pie>
+        <taimen>
+            <Filename>COSP_taimen-9.0-XXXXXXXX-XXXX-OFFICIAL</Filename>
+            <BuildTime>XXXXXXXXXX</BuildTime>
+            <RomUrl>lol</RomUrl>
+            <MD5Url>lol</MD5Url>
+            <ChangelogUrl>raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-taimen.txt</ChangelogUrl>
+        </taimen>
+    </Pie>
+</Updates>
