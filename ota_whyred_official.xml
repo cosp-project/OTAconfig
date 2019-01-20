@@ -6,7 +6,7 @@
             <BuildTime>1547802977</BuildTime>
             <RomUrl>https://1d4chan.org/images/thumb/9/91/Heroes_Orks_Skarboy_Kommando.png/350px-Heroes_Orks_Skarboy_Kommando.png</RomUrl>
             <MD5Url>https://1d4chan.org/images/thumb/9/91/Heroes_Orks_Skarboy_Kommando.png/350px-Heroes_Orks_Skarboy_Kommando.png.md5sum</MD5Url>
-            <ChangelogUrl>raw.githubusercontent.com/despOSitoROM/OTAconfig/pie/changelog/changelog-whyred.txt</ChangelogUrl>
+            <ChangelogUrl>raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-whyred.txt</ChangelogUrl>
         </whyred>
     </Pie>
 </Updates>
