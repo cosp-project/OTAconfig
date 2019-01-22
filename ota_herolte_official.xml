@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Updates>
+    <Pie>
+        <herolte>
+            <Filename>COSP_herolte-9.0-20190122-1231-OFFICIAL</Filename>
+            <BuildTime>1548160260</BuildTime>
+            <RomUrl>https://sia.pixeldrain.com/api/file/yVIugtrj</RomUrl>
+            <MD5Url>https://sia.pixeldrain.com/api/file/_3BYAftZ</MD5Url>
+            <ChangelogUrl>https://raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-herolte.txt</ChangelogUrl>
+        </herolte>
+    </Pie>
+</Updates>
