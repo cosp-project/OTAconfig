@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Updates>
+    <Pie>
+        <harpia>
+            <Filename>COSP_harpia-9.0-20190122-0140-OFFICIAL</Filename>
+            <BuildTime>12874000</BuildTime>
+            <RomUrl>https://sia.pixeldrain.com/api/file/hGDrwLob</RomUrl>
+            <MD5Url>https://sia.pixeldrain.com/api/file/x76JNCVc</MD5Url>
+            <ChangelogUrl>https://raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-harpia.txt</ChangelogUrl>
+        </harpia>
+    </Pie>
+</Updates>
