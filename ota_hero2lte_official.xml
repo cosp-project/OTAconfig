@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Updates>
+    <Pie>
+        <hero2lte>
+            <Filename>COSP_hero2lte-9.0-20190122-0029-OFFICIAL</Filename>
+            <BuildTime>1548122429</BuildTime>
+            <RomUrl>https://sia.pixeldrain.com/api/file/9CSdCBiO</RomUrl>
+            <MD5Url>https://sia.pixeldrain.com/api/file/lbk8tZuw</MD5Url>
+            <ChangelogUrl>https://raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-hero2lte.txt</ChangelogUrl>
+        </hero2lte>
+    </Pie>
+</Updates>
