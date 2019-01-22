@@ -2,10 +2,10 @@
 <Updates>
     <Pie>
         <whyred>
-            <Filename>COSP_whyred-9.0-20190120-1842-OFFICIAL</Filename>
-            <BuildTime>1548009741</BuildTime>
-            <RomUrl>https://sia.pixeldrain.com/api/file/I4jPylGO</RomUrl>
-            <MD5Url>https://sia.pixeldrain.com/api/file/lyue1RkP</MD5Url>
+            <Filename>COSP_whyred-9.0-20190122-1912-OFFICIAL</Filename>
+            <BuildTime>1548184366</BuildTime>
+            <RomUrl>https://sia.pixeldrain.com/api/file/fCIJ9-hC</RomUrl>
+            <MD5Url>https://sia.pixeldrain.com/api/file/_FRnjXRY</MD5Url>
             <ChangelogUrl>https://raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-whyred.txt</ChangelogUrl>
         </whyred>
     </Pie>

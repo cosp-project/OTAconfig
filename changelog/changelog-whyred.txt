@@ -1,17 +1,118 @@
 =======================
+     01-22-2019
+=======================
+
+
+   * build/make/
+c0a07bbc8 build: do it that way
+0afde5838 build: revert some changes
+ca84f5e1c build: revert some changes
+
+   * frameworks/base/
+eb8e66f845a base: SystemUI: make navigation bar tuner great again
+faf1156e4c0 base: even more fixing
+1a7bd6751eb Add NavBar toggle [1/2]
+24dde663552 Run NavBarTuner external
+4ac5d3260fe base: fixing errors
+eec51cee2e4 [1/2] base: implement OP like navigation gestures
+9330ba2811d base: fix strings
+67c1452db0b base: SystemUI: fix inital navbar hide handling
+67812d06ab2 base: SystemUI: bring back tuner navbar editor from N
+
+   * packages/apps/COSPSettings/
+e17f178 cospsettings: derp
+644ec33 cospsettings: add missing import
+c88d0ce cospsettings: navbar toggle
+f8b3f7f cospsettings: adding more features
+fab8edd Move Gestures to COSPSettings (2/2)
+b2503ab Merge pull request #1 from cosp-   */pie
+aaceb05 cospsettings: add gestures settings back
+
+   * packages/apps/COSPapps/
+2b516b0 cospapps: remove firefox
+
+   * packages/apps/Settings/
+aa31a8ebf1 Move Gestures to COSPSettings (1/2)
+
+   * vendor/cosp/
+9e69e2ba vendor: include Jelly [2/2]
+
+   * vendor/pixelstyle/
+602cce4 pixelstyle: remove wellbeing
+
+=======================
+     01-21-2019
+=======================
+
+
+   * build/make/
+a8fa11ed8 build: restore old packages
+
+   * device/xiaomi/whyred/
+de88068 Rename aosp_whyred.mk to cosp_whyred.mk
+ebfc832 Merge pull request #1 from PixelExperience-Devices/pie
+
+   * frameworks/base/
+67989157805 [1/2] base: navigation bar visibility control
+d5a2a88c4a0 base: bring omni utils back
+ee37020f599 [1/2] base: implement OP like navigation gestures
+c171f5f3945 Revert "Pimp the power menu out [1/2]"
+6de192612f3 Revert "Powermenu Torch option [1/2]"
+1076a6f15ac Powermenu Torch option [1/2]
+8b78808f61f Pimp the power menu out [1/2]
+252124520de Avoid casting network traffic to StatusBarIconView to prevent crash
+7b7d48699eb Add network traffic monitor properly to statusbar icons
+
+   * packages/apps/COSPSettings/
+61485f0 Revert "Run NavBar tuner from COSPSettings"
+9b9874f Revert "Move Gestures to COSPSettings (2/2)"
+bd314aa Revert "Pimp the power menu out [2/2]"
+4976732 Revert "Add utils"
+bdb7bfd Revert "Add utils"
+5609d07 Revert "Powermenu Torch option [2/2]"
+d49e611 Revert "cospsettings: add missing strings"
+c86d742 cospsettings: add missing strings
+383857c Powermenu Torch option [2/2]
+b7fa44a Add utils
+e17c1f8 Add utils
+6ba048d Pimp the power menu out [2/2]
+db46ea6 Move Gestures to COSPSettings (2/2)
+42c0512 Run NavBar tuner from COSPSettings
+
+   * packages/apps/Settings/
+ece84f41bd Revert "Move Gestures to COSPSettings (1/2)"
+0f472dfe18 Move Gestures to COSPSettings (1/2)
+
+   * packages/apps/Updates/
+4ef1658 cospota: do it that way
+9a6aaf9 Revert "Revert "show app in launcher""
+697774a Revert "show app in launcher"
+2057017 ota: even more rebrand
+aae9e97 Merge branch 'p' of https://github.com/TeamHorizon/android_packages_apps_XenonOTA into pie
+
+   * vendor/cosp/
+9be36ba6 vendor: restoring old packages
+
+=======================
      01-20-2019
 =======================
 
 
+   * device/xiaomi/whyred/
+b359f19 whyred: f2fs
+cdf0f21 whyred: compile kernel with clang 8.0.7
+886e9c9 whyred: sepolicy: Resolve init_fingerprint denials
+398f429 COSP bringup 2/2
+530c039 COSP bringup 1/2
+
    * frameworks/base/
-252124520de Avoid casting network traffic to StatusBarIconView to prevent crash
-7b7d48699eb Add network traffic monitor properly to statusbar icons
 2df1f09e8de Status network traffic [1/2]
 
    * hardware/qcom/power/
 75e7a3a power: Kill "Failed to acquire lock" log
 
    * packages/apps/COSPSettings/
+5b36365 cospsettings: add missing lines
 b392420 cospsettings: add missing files
 7f7d32b Status network traffic [2/2]
 
@@ -22,6 +123,18 @@ b16a7cbcd3 Update and rename ic_homepage_cosp.xml to ic_settings_cosp.xml
    * packages/apps/SettingsIntelligence/
 5830b6e Fix dark style issues
 
+   * packages/apps/Updates/
+0a10096 XenonOTA: Add Credits List XML
+824ca1a XenonOTA: Implement Credits Dialog
+cb835f8 XenonOTA: Utils - Add RoundedImageView
+e55f2df XenonOTA: Utils - Add ImageLoader (With File & Memory Cache)
+24377f5 XenonOTA: OTAUtils - Add CopyStream Function
+b248d0e XenonOTA: Utils - Create "launchURL" Function
+5c239a5 i sure hope this is the only file
+
+   * vendor/cosp/
+c42de220 ota: add md5 again
+
 =======================
      01-19-2019
 =======================
@@ -30,10 +143,9 @@ b16a7cbcd3 Update and rename ic_homepage_cosp.xml to ic_settings_cosp.xml
    * build/soong/
 5df6e6b9 okay, you don't like it
 d5ffadf0 soong: fix derp
+7557baa2 soong: add ota_conf to installclean
 
    * device/xiaomi/whyred/
-398f429 COSP bringup 2/2
-530c039 COSP bringup 1/2
 0e0d5fe whyred: Remove forced triple framebuffers
 b66e147 whyred: Address perf HAL denials with boost enabled
 842673e whyred: init.qcom.post_boot: Modify Naming convention for properties
@@ -50,6 +162,17 @@ e41b14ecc28 base: fix next derps
 2e177390a3f base: add missing lines
 4452a60eac2 base: fuckin finally
 e8cc448024f Revert "Introduce Ambient Indication Interface"
+48649fe427a Merge branch 'pie' of https://github.com/despOSitoROM/frameworks_base into pie
+f87d5b1d326 base: removing not needed things
+51cf82ff066 change a few things here hopin i didnt derp
+3fa89763aa7 base: SystemUI: Allow user to add/remove QS with one click
+606fb50b24d base: SystemUI: add QS rows config
+a157b378762 base: SystemUI: make QS columns count configurable
+
+   * hardware/qcom/display/
+329d459ba Make memtrack build with the VNDK.
+08b187682 Add missing includes.
+a2eefae27 libmemtrack: Add open method for msm8974.memtrack
 
    * kernel/xiaomi/whyred/
 abbcd10da86b whyred_defconfig: sync up with NoName
@@ -72,16 +195,18 @@ e82807a25a67 f2fs: change error code to -ENOMEM from -EINVAL
 125dcb4 fu## chromium, here comes firefox [1/2]
 f713f65 Revert "add chromium lmao"
 
+   * packages/apps/Settings/
+d33ee858a0 settings: remove weather leftovers
+
    * packages/apps/Updates/
-5c239a5 i sure hope this is the only file
 525fdf7 ota: fix naming
 c01fc38 ota: rebrand
 
    * vendor/cosp/
-c42de220 ota: add md5 again
 a1523ac6 ota: i hope this will work this time
 c2b6a32c fu## chromium, here comes firefox [2/2]
 12829828 ota: fix derps
+f3011ae4 enable chromium [2/2]
 
    * vendor/xiaomi/
 4e5cb997 whyred: Update audio and perf blobs
@@ -92,19 +217,10 @@ c693ceb5 whyred: Update adsp blobs from Mi8 Lite
 =======================
 
 
-   * build/soong/
-7557baa2 soong: add ota_conf to installclean
-
    * development/
 8e09e639b make-key: Enforce PBEv1 password-protected signing keys
 
    * frameworks/base/
-48649fe427a Merge branch 'pie' of https://github.com/despOSitoROM/frameworks_base into pie
-f87d5b1d326 base: removing not needed things
-51cf82ff066 change a few things here hopin i didnt derp
-3fa89763aa7 base: SystemUI: Allow user to add/remove QS with one click
-606fb50b24d base: SystemUI: add QS rows config
-a157b378762 base: SystemUI: make QS columns count configurable
 c36767289b7 Revert "SystemUI: Implement weather on lockscreen like Pixels"
 763654da897 base: fixing building errors
 bf1fffc1d28 LockscreenCharging: squashed (1/3) needed system/core patch based on: [2/2] frameworks: show charging current & voltage on lockscreen by yank555-lu [2/2]Base: show more battery info on lockscreen when charging by yank555-lu LockscreenCharging: Use double for mChargingVoltage and show as4.XV by xyyx Lockscreen charging: Formatting improvements by nathanchance
@@ -125,18 +241,17 @@ a132fc8 cospsettings: add updater
 912a27a add chromium lmao
 
    * packages/apps/Settings/
-d33ee858a0 settings: remove weather leftovers
 81f9b294cc settings: update cospsettings icon
 
    * packages/apps/Updates/
 a7fdf9e Add MicroG download option
 dbc951c cospota: fix derps in readme
+37f16d5 cospota: initial changes
 
    * system/core/
 13579a42c LockscreenCharging: squashed (2/3)
 
    * vendor/cosp/
-f3011ae4 enable chromium [2/2]
 1744b0d7 vendor: OTA fixing
 1bcf4df4 Merge branch 'pie' of https://github.com/despOSitoROM/vendor_cosp into pie
 05cf5661 vendor: fixing OTA
@@ -144,6 +259,7 @@ f3011ae4 enable chromium [2/2]
 ce1815e3 vendor: unify names with OTA
 31fd6253 Merge branch 'pie' of https://github.com/despOSitoROM/vendor_cosp into pie
 dfacac17 vendor: prepare for OTA
+b10df681 vendor: prepare for OTA
 
    * vendor/pixelstyle/
 c17976c Revert "Ship WeatherClient"
@@ -160,6 +276,21 @@ bb389cc sepolicy: Address perf HAL denial with boost enabled
 
    * frameworks/base/
 653f5fc216b Remove leftovers
+e9aa20351fb Revert "Ambient Play: Various fixes."
+45ef7106709 Revert "Ambient Play: Hide AmbientIndication if Song and Artist are null."
+73bbe06446c Revert "Ambient Play: Workaround for Pie (allow cleartext traffic)."
+c375ae652bf Revert "RecoginitionObserverFactory : Check if we have aquired resources before releasing it."
+a9938002aa5 Revert "RecoginitionObserverFactory: Change Thread priority"
+9ee7ef13aca Revert "AmbientPlay: Rework"
+974ddeaaf79 Revert "Ambient Play: Introduce our custom provider"
+c4051e291a9 Revert "Ambient Play: Introduce saving options [1/2]"
+375c53109a6 Revert "AmbientPlay: Introduce history manager [3/4]"
+8430b2ac79f Revert "AmbientPlay: Move strings to fw/res"
+
+   * hardware/qcom/display-caf/msm8974/
+33f3c20a9 Make memtrack build with the VNDK.
+5acc37c93 Add missing includes.
+e3737eeb3 libmemtrack: Add open method for msm8974.memtrack
 
    * hardware/qcom/power/
 c2900e9 power: Build with with BOARD_VNDK_VERSION
@@ -222,6 +353,10 @@ a155ec932226 Btrfs: check inconsistence between chunk and block group
 66b8c06f9365 btrfs: Enhance chunk validation check
 67405a1e780c btrfs: cleanup, stop casting for extent_map->lookup everywhere
 fea03efa24d4 ALSA: hda/realtek - Disable headset Mic VREF for headset mode of ALC225
+e137948e4b11 UPSTREAM: virtio: new feature to detect IOMMU device quirk
+7389e826abae UPSTREAM: vring: Use the DMA API on Xen
+6bb68f96a00a UPSTREAM: virtio_ring: Support DMA APIs
+dbe5b486ca9a UPSTREAM: vring: Introduce vring_use_dma_api()
 
    * packages/apps/COSPSettings/
 46e65b9 Rebrand to COSP
@@ -231,19 +366,24 @@ e1e619d Initial KCUFSettings
    * packages/apps/Settings/
 844a891ac5 Introduce COSPSettings
 b34506e539 Add custom KCUFSettings dashboard
-
-   * packages/apps/Updates/
-37f16d5 cospota: initial changes
+4d89ffc27d Revert some strings
+3776fbd34a Revert "Add preference for Ambient Play"
+396899c196 Revert "AmbientPlay: Introduce history manager [4/4]"
+630c0d1629 Revert "Ambient Play: Introduce saving options [2/2]"
+3208462ad9 Merge branch 'pie' of https://github.com/despOSitoROM/packages_apps_Settings into pie
 
    * prebuilts/clang/host/linux-x86/
 0b7a82e Fix a dir name typo (clang-346389c -> clang-r346389c).
 
    * vendor/cosp/
-b10df681 vendor: prepare for OTA
 027bbcce vendor: add timestamp
 
    * vendor/pixelstyle/
 95327eb pixelstyle: use dark bootanimations
+
+   * vendor/xiaomi/
+3c89d18c sdm845-common: Add QCOM's WFD implementation
+f33d8768 Regenerate
 
 =======================
      01-16-2019
@@ -251,26 +391,12 @@ b10df681 vendor: prepare for OTA
 
 
    * frameworks/base/
-e9aa20351fb Revert "Ambient Play: Various fixes."
-45ef7106709 Revert "Ambient Play: Hide AmbientIndication if Song and Artist are null."
-73bbe06446c Revert "Ambient Play: Workaround for Pie (allow cleartext traffic)."
-c375ae652bf Revert "RecoginitionObserverFactory : Check if we have aquired resources before releasing it."
-a9938002aa5 Revert "RecoginitionObserverFactory: Change Thread priority"
-9ee7ef13aca Revert "AmbientPlay: Rework"
-974ddeaaf79 Revert "Ambient Play: Introduce our custom provider"
-c4051e291a9 Revert "Ambient Play: Introduce saving options [1/2]"
-375c53109a6 Revert "AmbientPlay: Introduce history manager [3/4]"
-8430b2ac79f Revert "AmbientPlay: Move strings to fw/res"
 60f7705dc4e Add MicroG support
 48a8c93eba3 core: Add support for MicroG
 5e0fdc0dc54 Add MicroG support
 774367696c1 core: Add support for MicroG
 
    * kernel/xiaomi/whyred/
-e137948e4b11 UPSTREAM: virtio: new feature to detect IOMMU device quirk
-7389e826abae UPSTREAM: vring: Use the DMA API on Xen
-6bb68f96a00a UPSTREAM: virtio_ring: Support DMA APIs
-dbe5b486ca9a UPSTREAM: vring: Introduce vring_use_dma_api()
 5ec66a676736 ANDROID: cuttlefish_defconfig: Enable vsock options
 06477f7ef8c1 UPSTREAM: vhost/vsock: fix reset orphans race with close timeout
 e633b6d8e0df UPSTREAM: vhost/vsock: fix use-after-free in network stack callers
@@ -331,11 +457,6 @@ fdccad3 cospapps: fix derp
 81d9efe cospapps: update Lawnchair config
 
    * packages/apps/Settings/
-4d89ffc27d Revert some strings
-3776fbd34a Revert "Add preference for Ambient Play"
-396899c196 Revert "AmbientPlay: Introduce history manager [4/4]"
-630c0d1629 Revert "Ambient Play: Introduce saving options [2/2]"
-3208462ad9 Merge branch 'pie' of https://github.com/despOSitoROM/packages_apps_Settings into pie
 84b5059d1f Revert "Ambient Play: Add summary to some settings"
 5da4b93b42 settings: more cosp changes
 66b06f6d6a settings: logo should look fine now
@@ -343,13 +464,12 @@ fdccad3 cospapps: fix derp
    * vendor/cosp/
 726a83a0 vendor: include keyboard
 d0642011 vendor: switch to Lawnchair
+60f14392 vendor: include Lawnchair
 
    * vendor/pixelstyle/
 3d76c81 pixelstyle: remove Pixel Launcher
 
    * vendor/xiaomi/
-3c89d18c sdm845-common: Add QCOM's WFD implementation
-f33d8768 Regenerate
 04310968 sdm845 targets: Regen makefiles and add new targets to build guard
 
 =======================
@@ -383,7 +503,6 @@ d9a8d48dc8 add nice logo its shit but do i care?
 bf44a121e1 Initial COSP changes
 
    * vendor/cosp/
-60f14392 vendor: include Lawnchair
 5eae4e38 vendor: fix file naming
 08cea93b Initial COSP changes #2
 788d0e07 Initial COSP changes
@@ -409,6 +528,9 @@ c69bfa0ff38e ANDROID: f2fs: Complement "android_fs" tracepoint of read path
      01-13-2019
 =======================
 
+
+   * development/
+0d9797de8 Remove useless build warning
 
    * kernel/xiaomi/whyred/
 75db4ab744fb Revert "msm: camera: isp: Handle frame drop due to delay   "
@@ -512,9 +634,6 @@ bdb82196e75b xhci: Don't prevent USB2 bus suspend in state check intended for US
 =======================
 
 
-   * development/
-0d9797de8 Remove useless build warning
-
 =======================
      01-11-2019
 =======================
@@ -540,15 +659,6 @@ a956c6a16374 Merge upstream-f2fs-stable-linux-4.4.y into android-4.4
    * frameworks/native/
 eb136cdf4 Fix screenshot when cutout is hidden
 
-=======================
-     01-09-2019
-=======================
-
-
-   * device/xiaomi/whyred/
-b103dca whyred: Support Alipay fingerprint payment
-7d41e39 whyred: Import aptx blobs from mata
-
    * hardware/qcom/audio-caf/msm8996/
 53ac67649 Merge tag 'LA.UM.7.6.r1-03900-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD
 
@@ -558,239 +668,19 @@ b103dca whyred: Support Alipay fingerprint payment
    * hardware/qcom/media-caf/msm8996/
 29fa78708 Merge tag 'LA.UM.7.6.r1-03900-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD
 
+=======================
+     01-09-2019
+=======================
+
+
+   * device/xiaomi/whyred/
+b103dca whyred: Support Alipay fingerprint payment
+7d41e39 whyred: Import aptx blobs from mata
+
    * vendor/xiaomi/
 5a535a13 sdm845-common: Add SoterService app and remove unnecessary deps
 536a2a40 sdm845-common: Add common aptX and aptX-HD audio blobs
 a1ede979 sdm845-common: Update to MIUI 8.12.20 Global dev blobs
 29969a65 whyred: Add Alipay fingerprint payment blobs
 9a534d0f whyred: Import aptx blobs from mata
-
-=======================
-     01-08-2019
-=======================
-
-
-   * bionic/
-cf89392ca Merge branch 'pie-gsi' of https://android.googlesource.com/platform/bionic into HEAD
-
-   * bootable/recovery/
-80a909c5 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/bootable/recovery into HEAD
-08f8c667 update_verifier: skip verity to determine successful on custom builds
-
-   * build/make/
-36caceffe Merge branch 'pie-gsi' of https://android.googlesource.com/platform/build into pie
-89506fd53 Merge tag 'android-9.0.0_r30' into pie
-a51396654 Enable dynamic linker and hidden API warnings only on eng build
-bee69ae63 build: Support system-as-root A-only backuptool
-
-   * build/soong/
-cb9eb38f Merge branch 'pie-gsi' of https://android.googlesource.com/platform/build/soong into HEAD
-
-   * device/custom/sepolicy/
-3c081b7 common: Allow init to relabel I/O sched tuning nodes
-ab04909 Make A/B backuptool permissive
-c2eb9e8 move snap_app type definition to public
-1959cce selinux: add domain for snap
-c0b7447 common: Label and allow init to write to I/O sched tuning nodes
-
-   * device/qcom/sepolicy/
-3bad613 Merge https://github.com/LineageOS/android_device_qcom_sepolicy into pie
-
-   * device/qcom/sepolicy-legacy/
-caa7faa Merge https://github.com/LineageOS/android_device_qcom_sepolicy-legacy into pie
-
-   * device/xiaomi/whyred/
-133ac4e whyred: Move to common data-ipa-cfg-mgr
-8c48b24 whyred: doze: Match Pie settings UI
-59b2bb0 whyred: audio: Remove support for MMAP IRQ mode streams
-26a9f11 whyred: proprietary: Add missing blobs for sound trigger
-23e9d77 whyred: rootdir: Enlarge sched_small_wakee_task_load value for sdm660
-d9a5ca2 whyred: rootdir: Kill init.qti.qseecomd.sh
-
-   * external/perfetto/
-6f223188 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/external/perfetto into HEAD
-
-   * frameworks/av/
-4884f7ad7 Merge tag 'android-9.0.0_r30' of https://android.googlesource.com/platform/frameworks/av into HEAD
-15a4c5c34 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/av into HEAD
-931f91130 mediascanner: Accept .opus file extension.
-
-   * frameworks/base/
-6d2973c2cb5 Merge "Automatic translation import" into pie
-e77f9c33ace Automatic translation import
-16b24c35335 Merge "SystemUI: Make dark theme switch more sane [1/2]" into pie
-3c95d9de641 SystemUI: Make dark theme switch more sane [1/2]
-0e2e41de92f WeatherClient: Add back isAvailable method
-ba3ab3492d2 SurfaceControl: Unbreak public API after pie-gsi merge
-7e3e93e73a1 Merge tag 'android-9.0.0_r30' of https://android.googlesource.com/platform/frameworks/base into HEAD
-73f1a73fe06 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/base into HEAD
-e119497b105 ConsumerIR: Support Huawei's DSP chip implementation
-2fe11fda11a WindowOrientationListener: Check if proposed rotation is in range
-4ef89241c1c Revert "PhoneWindowManager: Check if proposed rotation is in range"
-9e800a16ad3 Enable Binder Proxy Tracking by Uid only on eng builds
-a4c50edca65 PowerProfile: allow overriding default power profile
-53ee07b3486 Revert "PowerProfile: allow overriding default power profile"
-c58f7336843 Add support for the .opus file format
-15759937383 CameraServiceProxy: Loosen UID check conditionally
-26435173f54 Fix NPE when creates wifi tracker
-af1c6604354 Revert "Wifi: Check for WiFiService's existence before its access"
-7040302a8cc Binder: Fix improper JNI call for dumpProxyDebugInfo
-348ac247153 Weather client: switch to vector drawables
-dacafa207b3 Weather client: fix refresh at boot and improve/cleanup code [1/2]
-204ce2f2bad VolumeDialogImpl: Fix animation direction logic
-fb5080762a3 AmbientIndicationManager: Fix settings callback
-ca9bf6cbe93 Automatic translation import
-2a59588ca67 Ambient Play: Introduce saving options [1/2]
-25cab5d1037 Ambient Play: Introduce our custom provider
-032eed0159b Merge changes for launching wifidisplay from system settings
-2b938482665 Revert "Merge changes for launching wifidisplay from system settings"
-8274c959913 Revert screen on speed up commits
-85941b8d04e WeatherClient: don't check package availability on each location query
-6b5de492ec4 Weather client check: set interval to 20 minutes
-415da269d34 SystemUI: allow the power menu to be relocated
-d260119c696 SystemUI: allow devices override audio panel location
-74eedb21d50 framework: Add WiFi Display R2 device info
-34a24ec377c PhoneWindowManager: Changes for WFD and UIBC.
-b687e1cf0cf Automatic translation import
-25ca54301d6 Add toggle for face auto unlock (1/2)
-f7a874a66ef KeyguardHostView: Auto face unlock v2
-f1b93c6c440 display: Add support for multiple displays.
-c742950ec0d Merge changes for launching wifidisplay from system settings
-6a85e3e85b3 WifiDisplayController: handle preexisting p2p connection status
-591ec734b9e core: Add support for overriding vendor properties
-
-   * frameworks/native/
-86fb5c2d3 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/native into HEAD
-a079725c3 sf: Workaround BufferLayer::setBuffers issue on 1440p msm8974
-1c84d150e libbinder: -case in 'Waiting for service' log.
-6d095f293 libbinder: Don't link against libutilscallstack.
-
-   * frameworks/opt/net/wifi/
-d3da932ef Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD
-
-   * frameworks/opt/telephony/
-10a4db770 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD
-
-   * hardware/custom/interfaces/
-35f690f light: aw2013: Mark as shutdown critical
-
-   * hardware/interfaces/
-e4b2a904 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/hardware/interfaces into HEAD
-7405baf9 camera: Only link and use vendor.qti.hardware.camera.device if specified
-9d0a0d14 Camed HAL extension: Added support in HIDL for Extended FD.
-ad8bf5cb Tuning of binder buffer for ARM devices
-
-   * hardware/qcom/audio/default/
-dd4e0ad9b Merge tag 'android-9.0.0_r30' into lineage-16.0-android-9.0.0_r30
-
-   * hardware/qcom/fm/
-d99e316 Import translations from los
-
-   * hardware/qcom/power/
-124ca2a power: msm8960: Implement performance profiles
-
-   * packages/apps/Bluetooth/
-1b48e082 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD
-
-   * packages/apps/Camera2/
-c6d3e4155 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/apps/Camera2 into HEAD
-
-   * packages/apps/Settings/
-ed33892345 Merge "Automatic translation import" into pie
-9e9bf9a4e5 Automatic translation import
-80e761eb8d Settings: Make dark theme switch more sane [2/2]
-ea0bf1f448 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
-9dc3c49043 Settings: Check if we have any color modes declared in overlay
-130cd1c2e8 development: Hide AOSP setting to control UI mode
-34022df1ca Automatic translation import
-b55d484f81 Ambient Play: Introduce saving options [2/2]
-e65787b7ed Ambient Play: Add summary to some settings
-01b12cae3a Automatic translation import
-8781795c7a Add toggle for face auto unlock (2/2)
-6b0fc2687e Automatic translation import
-d2859264f2 deviceinfo: Add support for overriding vendor properties
-
-   * packages/providers/DownloadProvider/
-c64b909 Automatic translation import
-0ff240d Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD
-
-   * packages/providers/MediaProvider/
-837b37d Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD
-
-   * packages/services/Telecomm/
-d59fd280 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD
-
-   * packages/services/Telephony/
-c1cef9de4 Fix non-protected broadcasts sent from phone process.
-dd3148d2b Telephony: Support muting by RIL command
-6266a92a5 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
-9e830592c Don't start SIP service before decrypted
-
-   * system/bt/
-8f9050344 Merge tag 'android-9.0.0_r30' into lineage-16.0-android-9.0.0_r30
-
-   * system/core/
-3a970c873 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/core into HEAD
-
-   * system/netd/
-199e2ad Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/netd into HEAD
-
-   * system/sepolicy/
-7b87b579 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/sepolicy into HEAD
-
-   * system/vold/
-e641fc2 Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/vold into pie
-d4d04df Merge tag 'android-9.0.0_r21' into pie
-cb6d90a vold: Move QCOM HW FDE inclusion under custom namespace
-1357182 system: vold: Remove crypto block device creation
-22eb0d1 vold: Add Hardware FDE feature
-23ea7c0 vold: Wrapped key support for FBE
-
-   * vendor/cosp/
-de3b5948 Revert "vendor: open sdcard root when launching DocumentsUI"
-b60621bb soong_config: Add flag for msm8974 1440p EGL workaround
-f898025d soong_config: Add flag for crypto waiting on QSEE to start
-353c3cd4 soong_config: Add flag for legacy HW FDE
-4cf07a50 soong_config: Add new flags for HW FDE
-2c8ebb12 vendor: qcom: Set proper CAF data-ipa-cfg-mgr pathmap
-4db96a1a vendor: qcom: Set data-ipa-cfg-mgr pathmap
-f4bd6616 vendor: open sdcard root when launching DocumentsUI
-bee9d765 extract_utils: avoid doing stuff on files that don't exist
-8cbeb402 vendor: Dynamically add custom APNs
-f95651ce vendor: Support system-as-root A-only backuptool
-ce179b9f vendor: restorecon scheduler tuneables before touching them
-41ba00b0 Revert "vendor: Cleanup init files"
-8eadcfd7 vendor: qcom: Allow a device to manually override which HALs it wants to use
-980991c9 permissions: Add permission for org.lineageos.snap
-f11512f6 overlay: Define Google Assistant as default
-c5efd8f8 vendor: Add techpack/audio to include path also
-3af1a2b5 vendor: Consider techpack/audio when generating kernel headers
-0b31ecf1 extract_utils: Redirect vdexextractor log to /dev/null
-6dd5865b vendor: Update vendorsetup logic
-f056ff8a vendor: Cleanup init files
-a7a0dc0e vendor: Copy org.pixelexperience.ota only on official builds
-945ed706 permissions: Add permissions for org.pixelexperience.ota
-c2faaed9 vendor: SystemUI: Import carrier overlays from crosshatch
-
-   * vendor/pixelstyle/
-39325f8 Update WeatherClient
-
-   * vendor/qcom/opensource/cryptfs_hw/
-87db962 Change soong variable name
-
-   * vendor/xiaomi/
-b37e22a1 whyred: Add missing blobs for sound trigger
-
-=======================
-     01-07-2019
-=======================
-
-
-   * build/make/
-bb83e5ca6 Merge "Revise apns-conf.xml of Legacy GSI from goldfish to sample" into pie-gsi
-e6043e250 Revise apns-conf.xml of Legacy GSI from goldfish to sample
-
-   * frameworks/base/
-d8b004855a2 Merge "Null locale causing the VTS fail." into pie-gsi
-07b9d14373c Null locale causing the VTS fail.
 
