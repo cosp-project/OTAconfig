@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Updates>
+    <Pie>
+        <santoni>
+            <Filename>COSP-190123-BETA</Filename>
+            <BuildTime>1548238272</BuildTime>
+            <RomUrl>https://sia.pixeldrain.com/api/file/xhNbDPEp</RomUrl>
+            <MD5Url>https://sia.pixeldrain.com/api/file/qUe6E10v</MD5Url>
+            <ChangelogUrl>https://raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-santoni.txt</ChangelogUrl>
+        </santoni>
+    </Pie>
+</Updates>
