@@ -1,16 +1,44 @@
 =======================
+     01-25-2019
+=======================
+
+
+   * frameworks/base/
+b27b258976b Add a property to override pre-o max aspect ratio
+38d7ae89859 base: fix check for keyguard in edge gestures
+
+   * vendor/cosp/
+a4894a86 vendor: fix ota xml file
+
+=======================
+     01-24-2019
+=======================
+
+
+   * hardware/qcom/display-caf/msm8998/
+4761c67b Revert "sdm: Add support to set/get dsi clk."
+5a45cb7b Revert "qdutils: Add binder support to get/set dsi clk."
+
+=======================
      01-23-2019
 =======================
 
 
    * frameworks/base/
 238d175d924 fwb: Lock day night mode
+eb8e66f845a base: SystemUI: make navigation bar tuner great again
+
+   * packages/apps/COSPSettings/
+612e254 Merge pull request #2 from cosp-   */test
 
    * vendor/cosp/
 b81299da vendor: fixing ota
 eaac6bf2 vendor: fix ota config
 d9511f5e vendor: add new variable
 ffabf7a1 vendor: change naming
+
+   * vendor/pixelstyle/
+602cce4 pixelstyle: remove wellbeing
 
 =======================
      01-22-2019
@@ -23,7 +51,6 @@ c0a07bbc8 build: do it that way
 ca84f5e1c build: revert some changes
 
    * frameworks/base/
-eb8e66f845a base: SystemUI: make navigation bar tuner great again
 faf1156e4c0 base: even more fixing
 1a7bd6751eb Add NavBar toggle [1/2]
 24dde663552 Run NavBarTuner external
@@ -68,9 +95,6 @@ ece84f41bd Revert "Move Gestures to COSPSettings (1/2)"
 
    * vendor/cosp/
 9e69e2ba vendor: include Jelly [2/2]
-
-   * vendor/pixelstyle/
-602cce4 pixelstyle: remove wellbeing
 
 =======================
      01-21-2019
@@ -134,15 +158,20 @@ e55f2df XenonOTA: Utils - Add ImageLoader (With File & Memory Cache)
    * device/xiaomi/whyred/
 398f429 COSP bringup 2/2
 530c039 COSP bringup 1/2
+0e0d5fe whyred: Remove forced triple framebuffers
+b66e147 whyred: Address perf HAL denials with boost enabled
+842673e whyred: init.qcom.post_boot: Modify Naming convention for properties
+b439ae4 whyred: proprietary: Update perf blobs from Mi8 Lite
+8362b4d whyred: Update audio blobs from Mi A2
+8b1cabc whyred: proprietary: Update adsp blobs from Mi8 Lite
+4f6d423 whyred: Allow appdomain to get vendor_camera_prop
 
    * frameworks/base/
 8084f74bc3b base: it looks better now
 
-   * hardware/qcom/power/
-75e7a3a power: Kill "Failed to acquire lock" log
-
    * kernel/xiaomi/whyred/
 abbcd10da86b whyred_defconfig: sync up with NoName
+8520ea3e28a6 msm-poweroff: always perform warm reset
 
    * packages/apps/COSPSettings/
 586cccd cospsettings: now it looks better
@@ -154,10 +183,15 @@ abbcd10da86b whyred_defconfig: sync up with NoName
 b248d0e XenonOTA: Utils - Create "launchURL" Function
 5c239a5 i sure hope this is the only file
 525fdf7 ota: fix naming
+c01fc38 ota: rebrand
 
    * vendor/cosp/
 c42de220 ota: add md5 again
 a1523ac6 ota: i hope this will work this time
+
+   * vendor/xiaomi/
+4e5cb997 whyred: Update audio and perf blobs
+c693ceb5 whyred: Update adsp blobs from Mi8 Lite
 
 =======================
      01-19-2019
@@ -168,15 +202,6 @@ a1523ac6 ota: i hope this will work this time
 5df6e6b9 okay, you don't like it
 d5ffadf0 soong: fix derp
 7557baa2 soong: add ota_conf to installclean
-
-   * device/xiaomi/whyred/
-0e0d5fe whyred: Remove forced triple framebuffers
-b66e147 whyred: Address perf HAL denials with boost enabled
-842673e whyred: init.qcom.post_boot: Modify Naming convention for properties
-b439ae4 whyred: proprietary: Update perf blobs from Mi8 Lite
-8362b4d whyred: Update audio blobs from Mi A2
-8b1cabc whyred: proprietary: Update adsp blobs from Mi8 Lite
-4f6d423 whyred: Allow appdomain to get vendor_camera_prop
 
    * frameworks/base/
 3a677aad787 base: add systemui tuner
@@ -200,7 +225,6 @@ c36767289b7 Revert "SystemUI: Implement weather on lockscreen like Pixels"
 a2eefae27 libmemtrack: Add open method for msm8974.memtrack
 
    * kernel/xiaomi/whyred/
-8520ea3e28a6 msm-poweroff: always perform warm reset
 583c82f9e02c whyred: enable f2fs
 5cc3071615a2 f2fs: implement rapid GC for Android
 51572a681ea7 f2fs: set ioprio of GC kthread to idle
@@ -214,6 +238,7 @@ e82807a25a67 f2fs: change error code to -ENOMEM from -EINVAL
 
    * packages/apps/COSPSettings/
 87d68e9 cospsettings: rebrand lockscreen settings
+0076d3a cospsettings: add missing files
 
    * packages/apps/COSPapps/
 125dcb4 fu## chromium, here comes firefox [1/2]
@@ -223,8 +248,8 @@ f713f65 Revert "add chromium lmao"
    * packages/apps/Settings/
 d33ee858a0 settings: remove weather leftovers
 
-   * packages/apps/Updates/
-c01fc38 ota: rebrand
+   * system/core/
+13579a42c LockscreenCharging: squashed (2/3)
 
    * vendor/cosp/
 c2b6a32c fu## chromium, here comes firefox [2/2]
@@ -233,10 +258,6 @@ f3011ae4 enable chromium [2/2]
 
    * vendor/pixelstyle/
 c17976c Revert "Ship WeatherClient"
-
-   * vendor/xiaomi/
-4e5cb997 whyred: Update audio and perf blobs
-c693ceb5 whyred: Update adsp blobs from Mi8 Lite
 
 =======================
      01-18-2019
@@ -251,7 +272,6 @@ bf1fffc1d28 LockscreenCharging: squashed (1/3) needed system/core patch based on
 af9810fce2a base: add missing lines
 
    * packages/apps/COSPSettings/
-0076d3a cospsettings: add missing files
 c45e492 LockscreenCharging: squashed (3/3)
 6fdcda2 Add back a helper pref that holds a system setting.
 24096b3 Add back a helper pref that holds a system setting.
@@ -272,9 +292,6 @@ b34506e539 Add custom KCUFSettings dashboard
 a7fdf9e Add MicroG download option
 dbc951c cospota: fix derps in readme
 37f16d5 cospota: initial changes
-
-   * system/core/
-13579a42c LockscreenCharging: squashed (2/3)
 
    * vendor/cosp/
 1744b0d7 vendor: OTA fixing
@@ -313,6 +330,8 @@ c4051e291a9 Revert "Ambient Play: Introduce saving options [1/2]"
 8430b2ac79f Revert "AmbientPlay: Move strings to fw/res"
 60f7705dc4e Add MicroG support
 48a8c93eba3 core: Add support for MicroG
+5e0fdc0dc54 Add MicroG support
+774367696c1 core: Add support for MicroG
 
    * hardware/qcom/display-caf/msm8974/
 33f3c20a9 Make memtrack build with the VNDK.
@@ -410,9 +429,8 @@ f33d8768 Regenerate
 =======================
 
 
-   * frameworks/base/
-5e0fdc0dc54 Add MicroG support
-774367696c1 core: Add support for MicroG
+   * build/make/
+c14e4aab9 That's why i shouldn't use automatic rebrand
 
    * kernel/xiaomi/whyred/
 5ec66a676736 ANDROID: cuttlefish_defconfig: Enable vsock options
@@ -498,7 +516,6 @@ d0642011 vendor: switch to Lawnchair
 
 
    * build/make/
-c14e4aab9 That's why i shouldn't use automatic rebrand
 87b6b9121 Initial COSP changes
 b4618ed3d We are COSP now
 
@@ -648,49 +665,4 @@ bdb82196e75b xhci: Don't prevent USB2 bus suspend in state check intended for US
      01-12-2019
 =======================
 
-
-=======================
-     01-11-2019
-=======================
-
-
-   * hardware/qcom/audio-caf/msm8998/
-2226fb947 Merge tag 'LA.UM.7.4.r1-04100-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-16.0-caf-8998
-
-   * hardware/qcom/display-caf/msm8998/
-e2c0a6db6 Merge tag 'LA.UM.7.4.r1-04100-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into lineage-16.0-caf-8998
-
-   * hardware/qcom/media-caf/msm8998/
-e077da5e4 Merge tag 'LA.UM.7.4.r1-04100-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into lineage-16.0-caf-8998
-
-   * kernel/xiaomi/whyred/
-a956c6a16374 Merge upstream-f2fs-stable-linux-4.4.y into android-4.4
-
-=======================
-     01-10-2019
-=======================
-
-
-   * device/xiaomi/whyred/
-b103dca whyred: Support Alipay fingerprint payment
-7d41e39 whyred: Import aptx blobs from mata
-
-   * frameworks/native/
-eb136cdf4 Fix screenshot when cutout is hidden
-
-   * hardware/qcom/audio-caf/msm8996/
-53ac67649 Merge tag 'LA.UM.7.6.r1-03900-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD
-
-   * hardware/qcom/display-caf/msm8996/
-6d5c572cc Merge tag 'LA.UM.7.6.r1-03900-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD
-
-   * hardware/qcom/media-caf/msm8996/
-29fa78708 Merge tag 'LA.UM.7.6.r1-03900-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD
-
-   * vendor/xiaomi/
-5a535a13 sdm845-common: Add SoterService app and remove unnecessary deps
-536a2a40 sdm845-common: Add common aptX and aptX-HD audio blobs
-a1ede979 sdm845-common: Update to MIUI 8.12.20 Global dev blobs
-29969a65 whyred: Add Alipay fingerprint payment blobs
-9a534d0f whyred: Import aptx blobs from mata
 
