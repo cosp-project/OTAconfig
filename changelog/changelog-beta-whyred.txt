@@ -1,4 +1,188 @@
 =======================
+     01-26-2019
+=======================
+
+
+   * build/make/
+62f9e6b9d build: Introduce SubstratumHelperService
+
+   * frameworks/base/
+111cd3aa36a OMS: handle target or overlay package disabled
+522f62f16d5 OMS: try harder not to update assets if nothing changed
+97c3c0f18a5 SubstratumService: Rewrite installation method for Pie InstallSession API
+8dc42e56a97 Unbreak public api by hiding substratum interfaces
+260fb655b75 Pie OMS: allow non-system overlays from Substratum
+53088361422 SubstratumService: Refactor & cleanup according to AOSP conventions
+29b3086cb0b base: modify/define custom overlay management
+a164a472a44 SubstratumService: unify permissions
+76cf4aa7a28 SubstratumService: allow CHANGE_OVERLAY_PACKAGES permission
+03565fdd091 base: Introduce SubstratumService
+15947145051 OMS: StrictMode and files under /data/system/theme/
+dd363b9cc50 Hold "volume up" during boot to disable all overlays
+025a51b8e6b ThemeSafety: Introduce App Crash Intent
+f41edbf280e ApplicationsState: add filter for Substratum overlays [2/2]
+e87a1d137c6 Extras: Add dynamic theme sound effects support
+8df01bad46b Extras: Add dynamic theme shutdown and boot animation support
+
+   * kernel/xiaomi/whyred/
+44a06063fa33 Merge tag 'v4.4.172' into pie
+eb0203592a7b fs: sdfat: Update to version 2.1.8
+054280aab623 input: gf3208: Mark IRQ as performance critical
+626b008972db Linux 4.4.172
+cd2402db92ce ipmi:ssif: Fix handling of multi-part return messages
+de614973ee15 net: speed up skb_rbtree_purge()
+e660576a53db mm, proc: be more verbose about unstable VMA flags in /proc/<pid>/smaps
+4c0b9a2eae04 mm/page-writeback.c: don't break integrity writeback on ->writepage() error
+829ff9b456ac ocfs2: fix panic due to unrecovered local alloc
+09d3be78ee45 scsi: megaraid: fix out-of-bound array accesses
+36b963041857 sysfs: Disable lockdep for driver bind/unbind files
+5d0ab08f715f ALSA: bebob: fix model-id of unit for Apogee Ensemble
+8ccd81ed3560 dm snapshot: Fix excessive memory usage and workqueue stalls
+e31cc4b7fe5d dm kcopyd: Fix bug causing workqueue stalls
+0bce6d203ac1 perf parse-events: Fix unchecked usage of strncpy()
+7b9677e88b35 perf svghelper: Fix unchecked usage of strncpy()
+55f67c984c7d perf intel-pt: Fix error with config term "pt=0"
+48cb2db5a15e mmc: atmel-mci: do not assume idle after atmci_request_end
+0e817654f80b kconfig: fix memory leak when EOF is encountered in quotation
+6b25c8de31f1 kconfig: fix file name and line number of warn_ignored_character()
+60a7d189a13f clk: imx6q: reset exclusive gates on init
+10a97294ffe8 scsi: target: use consistent left-aligned ASCII INQUIRY data
+043858080aac net: call sk_dst_reset when set SO_DONTROUTE
+bb23dfd69e37 media: firewire: Fix app_info parameter type in avc_ca{,_app}_info
+3f92e24be829 powerpc/pseries/cpuidle: Fix preempt warning
+f250e4c562a3 pstore/ram: Do not treat empty buffers as valid
+4d919739df1f jffs2: Fix use of uninitialized delayed_work, lockdep breakage
+2ec43b267352 arm64: perf: set suppress_bind_attrs flag to true
+c890a458e272 MIPS: SiByte: Enable swiotlb for SWARM, LittleSur and BigSur
+568736f8e5a7 writeback: don't decrement wb->refcnt if !wb->bdi
+73bf147f46fb e1000e: allow non-monotonic SYSTIM readings
+0c4a25cc6f29 platform/x86: asus-wmi: Tell the EC the OS will handle the display off hotkey
+f00ebf4f84ed xfs: don't fail when converting shortform attr to long form during ATTR_REPLACE
+cc975000ebb5 ipv6: Take rcu_read_lock in __inet6_bind for mapped addresses
+8fccab3b98ad ipv6: Consider sk_bound_dev_if when binding a socket to a v4 mapped address
+e4193747a5cc r8169: Add support for new Realtek Ethernet
+da6c1b10ba4c media: vb2: be sure to unlock mutex on errors
+e896840a8a66 drm/fb-helper: Ignore the value of fb_var_screeninfo.pixclock
+9ec298cc874d loop: Fix double mutex_unlock(&loop_ctl_mutex) in loop_control_ioctl()
+611f77199cd7 loop: Get rid of loop_index_mutex
+4ee414c3b602 loop: Fold __loop_release into loop_release
+b3f3107fbd92 block/loop: Use global lock for ioctl() operation.
+02035bea64b7 tipc: fix uninit-value in tipc_nl_compat_doit
+c25352f9ad5d tipc: fix uninit-value in tipc_nl_compat_name_table_dump
+0ff9dec295ef tipc: fix uninit-value in tipc_nl_compat_link_set
+0ae6754379be tipc: fix uninit-value in tipc_nl_compat_bearer_enable
+93ece9285ec6 tipc: fix uninit-value in tipc_nl_compat_link_reset_stats
+3fb0cbefc600 sctp: allocate sctp_sockaddr_entry with kzalloc
+9ef38b24344e selinux: fix GPF on invalid policy
+84ba6b78ba0e sunrpc: handle ENOMEM in rpcb_getport_async
+f76e38ea42f5 media: vb2: vb2_mmap: move lock up
+ac0e22539538 LSM: Check for NULL cred-security on free
+4bc86212e199 media: vivid: set min width/height to a value > 0
+8185cc4ff897 media: vivid: fix error handling of kthread_run
+505c2ac72a09 omap2fb: Fix stack memory disclosure
+93e6b2659b16 Disable MSI also when pcie-octeon.pcie_disable on
+af135bd83945 mfd: tps6586x: Handle interrupts on suspend
+db58a203792a mips: fix n32 compat_ipc_parse_version
+2f8018df3f50 scsi: sd: Fix cache_type_store()
+e08323f75b56 Yama: Check for pid death before checking ancestry
+bc42c4f33846 btrfs: wait on ordered extents on abort cleanup
+461652efc154 crypto: authenc - fix parsing key with misaligned rta_len
+ca3f892b57ef crypto: authencesn - Avoid twice completion call in decrypt path
+471a110cd295 ip: on queued skb use skb_header_pointer instead of pskb_may_pull
+b57db51007a0 packet: Do not leak dev refcounts on error exit
+01267fc7a772 net: bridge: fix a bug on using a neighbour cache entry without checking its state
+876d68105d8a ipv6: fix kernel-infoleak in ipv6_local_error()
+5b1d8e5d86c2 arm64: Don't trap host pointer auth use to EL2
+0b6c2279b7a4 arm64/kvm: consistently handle host HCR_EL2 flags
+b820fe255e50 proc: Remove empty line in /proc/self/status
+9e86549c56f7 media: em28xx: Fix misplaced reset of dev->v4l::field_count
+afd11670e221 f2fs: fix validation of the block count in sanity_check_raw_super
+a0c9aa92c799 f2fs: fix missing up_read
+b50d8b9e1750 f2fs: fix invalid memory access
+98beb84af721 f2fs: fix to do sanity check with cp_pack_start_sum
+4901e126b6e1 f2fs: fix to do sanity check with block address in main area v2
+bdffda8db8d9 f2fs: fix to do sanity check with block address in main area
+3bfe2049c222 f2fs: fix to do sanity check with reserved blkaddr of inline inode
+cbe5e5cd70c0 f2fs: fix to do sanity check with node footer and iblocks
+24f8bb894564 f2fs: Add sanity_check_inode() function
+b31ccde08667 f2fs: fix to do sanity check with user_block_count
+056120a8c192 f2fs: fix to do sanity check with secs_per_zone
+5b0e78cc5cf0 f2fs: introduce and spread verify_blkaddr
+89e13ff3ba16 f2fs: clean up with is_valid_blkaddr()
+812bc5b6d68b f2fs: enhance sanity_check_raw_super() to avoid potential overflow
+4e262aeed720 f2fs: sanity check on sit entry
+d5516450d29a f2fs: check blkaddr more accuratly before issue a bio
+f666f11a266a f2fs: return error during fill_super
+a4f4f97573bf f2fs: fix race condition in between free nid allocator/initializer
+db0e91e3fe72 f2fs: free meta pages if sanity check for ckpt is failed
+b37804d039bf f2fs: detect wrong layout
+e465e93d88cb f2fs: fix to determine start_cp_addr by sbi->cur_cp_pack
+9213c2b5119a f2fs: put directory inodes before checkpoint in roll-forward recovery
+2f958b8e22ec f2fs: introduce get_checkpoint_version for cleanup
+65b9d5326d7d f2fs: use crc and cp version to determine roll-forward recovery
+5dfb9eb6ca6a f2fs: avoid unneeded loop in build_sit_entries
+6ef26eb15521 f2fs: not allow to write illegal blkaddr
+70c357851b01 f2fs: fix to avoid reading out encrypted data in page cache
+4aa4ce1c4ad5 f2fs: fix inode cache leak
+6d07c0f4a432 f2fs: factor out fsync inode entry operations
+8f7c4fb99141 f2fs: remove an obsolete variable
+1499d39b74f5 f2fs: give -EINVAL for norecovery and rw mount
+523972a6e347 f2fs: fix to convert inline directory correctly
+8c5dfff5de5f f2fs: move sanity checking of cp into get_valid_checkpoint
+87a099c6bd14 f2fs: cover more area with nat_tree_lock
+139211c6c627 f2fs: clean up argument of recover_data
+693ae2911974 can: gw: ensure DLC boundaries after CAN frame modification
+d93216e51e19 tty/ldsem: Wake up readers after timed out down_write()
+5d555e7984ab msm: mdss: Mark display-wake kthread as performance critical
+8314e90c2118 msm: mdss: Power on display asynchronously as early as possible
+85c6e7f4ab66 input: fpc1020: Mark IRQ as performance critical
+7f930cede437 msm: mdss: Mark IRQ and important kthreads as performance critical
+1c110dc04967 msm: kgsl: Mark IRQ and worker thread as performance critical
+dd78c458f1e2 kernel: Force trivial, unbound kthreads onto low-power CPUs
+7fe8ac1b981c kernel: Add API to mark IRQs and kthreads as performance critical
+474e703d5921 sched: hmp: Reduce number of load reports in a window
+862ad6898470 sched: cpufreq: HMP load reporting changes
+1784eb38f089 core_ctl: Consider high irq loaded CPU as busy
+9b70ce9f630f PM / devfreq: memlat: Don't ignore extremely latency sensitive workloads
+a597119a93f2 Revert "msm: kgsl: Do not memset pages to zero while adding to pool"
+b1f96feef362 mfd: wcd9xxx: disable slimbus register access for debugfs
+d868e0c29d1b msm_cci: fix inconsistent mutex_lock
+4b539dad772c msm: memshare: relaese mutex if req client id is not found
+5bd9f1e8f4b0 thermal: qpnp-adc-tm: release lock upon disable_chan_meas failure
+94b14b163a4c qcom: qmi: release mutex upon qmi_svc_event_notifier_register error
+c4462deaf393 i2c-msm-v2: allow i2c_adapter to retry on arbitration lost
+d9d05a9f3d6b msm_thermal: initialize later than arch drivers
+5c3fb311cf65 Revert "serial: msm_serial_hs: Protect spurious irqs after wakeup irq enablement"
+da24b28d1d83 msm: kgsl: Stop slab shrinker when no more pages can be reclaimed
+7e15dfdbcfc4 Revert "f_fs: set maxburst to one before enabling endpoints"
+22b88abf4f38 dwc3: resize txfifo of IN/INT endpoint before enabling it
+3c6ce5711151 Revert "USB: set hub's default autosuspend delay as 0"
+1a6bc8e0061e Revert "usb: hub: Prevent hub autosuspend if usbcore.autosuspend is -1"
+e071622ba4f9 BACKPORT: usb: host: plat: Enable xHCI plat runtime PM
+0cc643bc827a ASoC: msm: q6dspv2: vote for Glink Rx thread priority upgrade
+31b92b559352 soc: q6dspv2: add api to vote for upgrading thread priority
+
+   * packages/apps/COSPSettings/
+8258f7d cospsettings: hide updater when unofficial
+
+   * packages/apps/COSPapps/
+67fee1d Add SubsKey apk required for Substratum Service Mode
+a4a899c cospapps: update Lawnchair to alpha-825
+
+   * packages/apps/Settings/
+392aa28c2e Settings: Introduce Substratum changes.
+
+   * system/sepolicy/
+4c52a65c Merge pull request #1 from FacuM/pie
+8a5a6ada Android.mk: Remove the inconsequential warning
+5a531333 tee_listener isnt global
+3bd23d8b p subs integration test
+e5173dcb sepolicy: address denials related to recovery and first boot
+67e2197a Implement sepolicy rules for substratum theming in p release
+1be20043 Introduce sepolicy exceptions for theme assets
+bdfd7700 Initial sepolicy rules for substratum service
+
+=======================
      01-25-2019
 =======================
 
@@ -7,8 +191,8 @@
 b27b258976b Add a property to override pre-o max aspect ratio
 38d7ae89859 base: fix check for keyguard in edge gestures
 
-   * vendor/cosp/
-a4894a86 vendor: fix ota xml file
+   * packages/apps/COSPapps/
+6f84395 cospapps: update Lawnchair to alpha-824
 
 =======================
      01-24-2019
@@ -19,6 +203,9 @@ a4894a86 vendor: fix ota xml file
 4761c67b Revert "sdm: Add support to set/get dsi clk."
 5a45cb7b Revert "qdutils: Add binder support to get/set dsi clk."
 
+   * vendor/cosp/
+a4894a86 vendor: fix ota xml file
+
 =======================
      01-23-2019
 =======================
@@ -26,19 +213,12 @@ a4894a86 vendor: fix ota xml file
 
    * frameworks/base/
 238d175d924 fwb: Lock day night mode
-eb8e66f845a base: SystemUI: make navigation bar tuner great again
-
-   * packages/apps/COSPSettings/
-612e254 Merge pull request #2 from cosp-   */test
 
    * vendor/cosp/
 b81299da vendor: fixing ota
 eaac6bf2 vendor: fix ota config
 d9511f5e vendor: add new variable
 ffabf7a1 vendor: change naming
-
-   * vendor/pixelstyle/
-602cce4 pixelstyle: remove wellbeing
 
 =======================
      01-22-2019
@@ -51,6 +231,7 @@ c0a07bbc8 build: do it that way
 ca84f5e1c build: revert some changes
 
    * frameworks/base/
+eb8e66f845a base: SystemUI: make navigation bar tuner great again
 faf1156e4c0 base: even more fixing
 1a7bd6751eb Add NavBar toggle [1/2]
 24dde663552 Run NavBarTuner external
@@ -59,11 +240,6 @@ eec51cee2e4 [1/2] base: implement OP like navigation gestures
 9330ba2811d base: fix strings
 67c1452db0b base: SystemUI: fix inital navbar hide handling
 67812d06ab2 base: SystemUI: bring back tuner navbar editor from N
-67989157805 [1/2] base: navigation bar visibility control
-d5a2a88c4a0 base: bring omni utils back
-ee37020f599 [1/2] base: implement OP like navigation gestures
-c171f5f3945 Revert "Pimp the power menu out [1/2]"
-6de192612f3 Revert "Powermenu Torch option [1/2]"
 
    * packages/apps/COSPSettings/
 e17f178 cospsettings: derp
@@ -73,28 +249,18 @@ f8b3f7f cospsettings: adding more features
 fab8edd Move Gestures to COSPSettings (2/2)
 b2503ab Merge pull request #1 from cosp-   */pie
 aaceb05 cospsettings: add gestures settings back
-61485f0 Revert "Run NavBar tuner from COSPSettings"
-9b9874f Revert "Move Gestures to COSPSettings (2/2)"
-bd314aa Revert "Pimp the power menu out [2/2]"
-4976732 Revert "Add utils"
-bdb7bfd Revert "Add utils"
-5609d07 Revert "Powermenu Torch option [2/2]"
-d49e611 Revert "cospsettings: add missing strings"
 
    * packages/apps/COSPapps/
 2b516b0 cospapps: remove firefox
 
    * packages/apps/Settings/
 aa31a8ebf1 Move Gestures to COSPSettings (1/2)
-ece84f41bd Revert "Move Gestures to COSPSettings (1/2)"
-
-   * packages/apps/Updates/
-4ef1658 cospota: do it that way
-9a6aaf9 Revert "Revert "show app in launcher""
-697774a Revert "show app in launcher"
 
    * vendor/cosp/
 9e69e2ba vendor: include Jelly [2/2]
+
+   * vendor/pixelstyle/
+602cce4 pixelstyle: remove wellbeing
 
 =======================
      01-21-2019
@@ -107,21 +273,26 @@ a8fa11ed8 build: restore old packages
    * device/xiaomi/whyred/
 de88068 Rename aosp_whyred.mk to cosp_whyred.mk
 ebfc832 Merge pull request #1 from PixelExperience-Devices/pie
-b359f19 whyred: f2fs
-cdf0f21 whyred: compile kernel with clang 8.0.7
-886e9c9 whyred: sepolicy: Resolve init_fingerprint denials
 
    * frameworks/base/
+67989157805 [1/2] base: navigation bar visibility control
+d5a2a88c4a0 base: bring omni utils back
+ee37020f599 [1/2] base: implement OP like navigation gestures
+c171f5f3945 Revert "Pimp the power menu out [1/2]"
+6de192612f3 Revert "Powermenu Torch option [1/2]"
 1076a6f15ac Powermenu Torch option [1/2]
 8b78808f61f Pimp the power menu out [1/2]
 252124520de Avoid casting network traffic to StatusBarIconView to prevent crash
 7b7d48699eb Add network traffic monitor properly to statusbar icons
-2df1f09e8de Status network traffic [1/2]
-
-   * hardware/qcom/power/
-75e7a3a power: Kill "Failed to acquire lock" log
 
    * packages/apps/COSPSettings/
+61485f0 Revert "Run NavBar tuner from COSPSettings"
+9b9874f Revert "Move Gestures to COSPSettings (2/2)"
+bd314aa Revert "Pimp the power menu out [2/2]"
+4976732 Revert "Add utils"
+bdb7bfd Revert "Add utils"
+5609d07 Revert "Powermenu Torch option [2/2]"
+d49e611 Revert "cospsettings: add missing strings"
 c86d742 cospsettings: add missing strings
 383857c Powermenu Torch option [2/2]
 b7fa44a Add utils
@@ -129,23 +300,17 @@ e17c1f8 Add utils
 6ba048d Pimp the power menu out [2/2]
 db46ea6 Move Gestures to COSPSettings (2/2)
 42c0512 Run NavBar tuner from COSPSettings
-5b36365 cospsettings: add missing lines
-b392420 cospsettings: add missing files
-7f7d32b Status network traffic [2/2]
 
    * packages/apps/Settings/
+ece84f41bd Revert "Move Gestures to COSPSettings (1/2)"
 0f472dfe18 Move Gestures to COSPSettings (1/2)
-cfabc1d1de Create ic_homepage_cosp.xml
-b16a7cbcd3 Update and rename ic_homepage_cosp.xml to ic_settings_cosp.xml
 
    * packages/apps/Updates/
+4ef1658 cospota: do it that way
+9a6aaf9 Revert "Revert "show app in launcher""
+697774a Revert "show app in launcher"
 2057017 ota: even more rebrand
 aae9e97 Merge branch 'p' of https://github.com/TeamHorizon/android_packages_apps_XenonOTA into pie
-0a10096 XenonOTA: Add Credits List XML
-824ca1a XenonOTA: Implement Credits Dialog
-cb835f8 XenonOTA: Utils - Add RoundedImageView
-e55f2df XenonOTA: Utils - Add ImageLoader (With File & Memory Cache)
-24377f5 XenonOTA: OTAUtils - Add CopyStream Function
 
    * vendor/cosp/
 9be36ba6 vendor: restoring old packages
@@ -156,42 +321,41 @@ e55f2df XenonOTA: Utils - Add ImageLoader (With File & Memory Cache)
 
 
    * device/xiaomi/whyred/
+b359f19 whyred: f2fs
+cdf0f21 whyred: compile kernel with clang 8.0.7
+886e9c9 whyred: sepolicy: Resolve init_fingerprint denials
 398f429 COSP bringup 2/2
 530c039 COSP bringup 1/2
-0e0d5fe whyred: Remove forced triple framebuffers
-b66e147 whyred: Address perf HAL denials with boost enabled
-842673e whyred: init.qcom.post_boot: Modify Naming convention for properties
-b439ae4 whyred: proprietary: Update perf blobs from Mi8 Lite
-8362b4d whyred: Update audio blobs from Mi A2
-8b1cabc whyred: proprietary: Update adsp blobs from Mi8 Lite
-4f6d423 whyred: Allow appdomain to get vendor_camera_prop
 
    * frameworks/base/
-8084f74bc3b base: it looks better now
+2df1f09e8de Status network traffic [1/2]
 
-   * kernel/xiaomi/whyred/
-abbcd10da86b whyred_defconfig: sync up with NoName
-8520ea3e28a6 msm-poweroff: always perform warm reset
+   * hardware/qcom/power/
+75e7a3a power: Kill "Failed to acquire lock" log
 
    * packages/apps/COSPSettings/
-586cccd cospsettings: now it looks better
+5b36365 cospsettings: add missing lines
+b392420 cospsettings: add missing files
+7f7d32b Status network traffic [2/2]
+
+   * packages/apps/Settings/
+cfabc1d1de Create ic_homepage_cosp.xml
+b16a7cbcd3 Update and rename ic_homepage_cosp.xml to ic_settings_cosp.xml
 
    * packages/apps/SettingsIntelligence/
 5830b6e Fix dark style issues
 
    * packages/apps/Updates/
+0a10096 XenonOTA: Add Credits List XML
+824ca1a XenonOTA: Implement Credits Dialog
+cb835f8 XenonOTA: Utils - Add RoundedImageView
+e55f2df XenonOTA: Utils - Add ImageLoader (With File & Memory Cache)
+24377f5 XenonOTA: OTAUtils - Add CopyStream Function
 b248d0e XenonOTA: Utils - Create "launchURL" Function
 5c239a5 i sure hope this is the only file
-525fdf7 ota: fix naming
-c01fc38 ota: rebrand
 
    * vendor/cosp/
 c42de220 ota: add md5 again
-a1523ac6 ota: i hope this will work this time
-
-   * vendor/xiaomi/
-4e5cb997 whyred: Update audio and perf blobs
-c693ceb5 whyred: Update adsp blobs from Mi8 Lite
 
 =======================
      01-19-2019
@@ -203,7 +367,17 @@ c693ceb5 whyred: Update adsp blobs from Mi8 Lite
 d5ffadf0 soong: fix derp
 7557baa2 soong: add ota_conf to installclean
 
+   * device/xiaomi/whyred/
+0e0d5fe whyred: Remove forced triple framebuffers
+b66e147 whyred: Address perf HAL denials with boost enabled
+842673e whyred: init.qcom.post_boot: Modify Naming convention for properties
+b439ae4 whyred: proprietary: Update perf blobs from Mi8 Lite
+8362b4d whyred: Update audio blobs from Mi A2
+8b1cabc whyred: proprietary: Update adsp blobs from Mi8 Lite
+4f6d423 whyred: Allow appdomain to get vendor_camera_prop
+
    * frameworks/base/
+8084f74bc3b base: it looks better now
 3a677aad787 base: add systemui tuner
 e41b14ecc28 base: fix next derps
 985b0643f9d base: SystemUI: add back QS hide label
@@ -215,9 +389,6 @@ f87d5b1d326 base: removing not needed things
 51cf82ff066 change a few things here hopin i didnt derp
 3fa89763aa7 base: SystemUI: Allow user to add/remove QS with one click
 606fb50b24d base: SystemUI: add QS rows config
-a157b378762 base: SystemUI: make QS columns count configurable
-c36767289b7 Revert "SystemUI: Implement weather on lockscreen like Pixels"
-763654da897 base: fixing building errors
 
    * hardware/qcom/display/
 329d459ba Make memtrack build with the VNDK.
@@ -225,6 +396,8 @@ c36767289b7 Revert "SystemUI: Implement weather on lockscreen like Pixels"
 a2eefae27 libmemtrack: Add open method for msm8974.memtrack
 
    * kernel/xiaomi/whyred/
+abbcd10da86b whyred_defconfig: sync up with NoName
+8520ea3e28a6 msm-poweroff: always perform warm reset
 583c82f9e02c whyred: enable f2fs
 5cc3071615a2 f2fs: implement rapid GC for Android
 51572a681ea7 f2fs: set ioprio of GC kthread to idle
@@ -237,27 +410,28 @@ ad122e13febc f2fs: fix compile warnings: 'struct *' declared inside parameter li
 e82807a25a67 f2fs: change error code to -ENOMEM from -EINVAL
 
    * packages/apps/COSPSettings/
-87d68e9 cospsettings: rebrand lockscreen settings
-0076d3a cospsettings: add missing files
+586cccd cospsettings: now it looks better
 
    * packages/apps/COSPapps/
 125dcb4 fu## chromium, here comes firefox [1/2]
 f713f65 Revert "add chromium lmao"
-912a27a add chromium lmao
 
    * packages/apps/Settings/
 d33ee858a0 settings: remove weather leftovers
 
-   * system/core/
-13579a42c LockscreenCharging: squashed (2/3)
+   * packages/apps/Updates/
+525fdf7 ota: fix naming
+c01fc38 ota: rebrand
 
    * vendor/cosp/
+a1523ac6 ota: i hope this will work this time
 c2b6a32c fu## chromium, here comes firefox [2/2]
 12829828 ota: fix derps
 f3011ae4 enable chromium [2/2]
 
-   * vendor/pixelstyle/
-c17976c Revert "Ship WeatherClient"
+   * vendor/xiaomi/
+4e5cb997 whyred: Update audio and perf blobs
+c693ceb5 whyred: Update adsp blobs from Mi8 Lite
 
 =======================
      01-18-2019
@@ -268,10 +442,15 @@ c17976c Revert "Ship WeatherClient"
 8e09e639b make-key: Enforce PBEv1 password-protected signing keys
 
    * frameworks/base/
+a157b378762 base: SystemUI: make QS columns count configurable
+c36767289b7 Revert "SystemUI: Implement weather on lockscreen like Pixels"
+763654da897 base: fixing building errors
 bf1fffc1d28 LockscreenCharging: squashed (1/3) needed system/core patch based on: [2/2] frameworks: show charging current & voltage on lockscreen by yank555-lu [2/2]Base: show more battery info on lockscreen when charging by yank555-lu LockscreenCharging: Use double for mChargingVoltage and show as4.XV by xyyx Lockscreen charging: Formatting improvements by nathanchance
 af9810fce2a base: add missing lines
 
    * packages/apps/COSPSettings/
+87d68e9 cospsettings: rebrand lockscreen settings
+0076d3a cospsettings: add missing files
 c45e492 LockscreenCharging: squashed (3/3)
 6fdcda2 Add back a helper pref that holds a system setting.
 24096b3 Add back a helper pref that holds a system setting.
@@ -279,19 +458,20 @@ c45e492 LockscreenCharging: squashed (3/3)
 fa77f06 cospsettings: use standard prefernece instead of cardview
 a132fc8 cospsettings: add updater
 5a1f2e2 cospsettings: remove things i don't need now
-46e65b9 Rebrand to COSP
-e1e619d Initial KCUFSettings
-4d6d666 Testing
+
+   * packages/apps/COSPapps/
+912a27a add chromium lmao
 
    * packages/apps/Settings/
 81f9b294cc settings: update cospsettings icon
-844a891ac5 Introduce COSPSettings
-b34506e539 Add custom KCUFSettings dashboard
 
    * packages/apps/Updates/
 a7fdf9e Add MicroG download option
 dbc951c cospota: fix derps in readme
 37f16d5 cospota: initial changes
+
+   * system/core/
+13579a42c LockscreenCharging: squashed (2/3)
 
    * vendor/cosp/
 1744b0d7 vendor: OTA fixing
@@ -302,9 +482,9 @@ ce1815e3 vendor: unify names with OTA
 31fd6253 Merge branch 'pie' of https://github.com/despOSitoROM/vendor_cosp into pie
 dfacac17 vendor: prepare for OTA
 b10df681 vendor: prepare for OTA
-027bbcce vendor: add timestamp
 
    * vendor/pixelstyle/
+c17976c Revert "Ship WeatherClient"
 fd9a9ae pixelstyle: fix bootanimations
 
 =======================
@@ -328,10 +508,6 @@ a9938002aa5 Revert "RecoginitionObserverFactory: Change Thread priority"
 c4051e291a9 Revert "Ambient Play: Introduce saving options [1/2]"
 375c53109a6 Revert "AmbientPlay: Introduce history manager [3/4]"
 8430b2ac79f Revert "AmbientPlay: Move strings to fw/res"
-60f7705dc4e Add MicroG support
-48a8c93eba3 core: Add support for MicroG
-5e0fdc0dc54 Add MicroG support
-774367696c1 core: Add support for MicroG
 
    * hardware/qcom/display-caf/msm8974/
 33f3c20a9 Make memtrack build with the VNDK.
@@ -404,17 +580,23 @@ e137948e4b11 UPSTREAM: virtio: new feature to detect IOMMU device quirk
 6bb68f96a00a UPSTREAM: virtio_ring: Support DMA APIs
 dbe5b486ca9a UPSTREAM: vring: Introduce vring_use_dma_api()
 
+   * packages/apps/COSPSettings/
+46e65b9 Rebrand to COSP
+e1e619d Initial KCUFSettings
+4d6d666 Testing
+
    * packages/apps/Settings/
+844a891ac5 Introduce COSPSettings
+b34506e539 Add custom KCUFSettings dashboard
 4d89ffc27d Revert some strings
 3776fbd34a Revert "Add preference for Ambient Play"
 396899c196 Revert "AmbientPlay: Introduce history manager [4/4]"
-630c0d1629 Revert "Ambient Play: Introduce saving options [2/2]"
-3208462ad9 Merge branch 'pie' of https://github.com/despOSitoROM/packages_apps_Settings into pie
-84b5059d1f Revert "Ambient Play: Add summary to some settings"
-5da4b93b42 settings: more cosp changes
 
    * prebuilts/clang/host/linux-x86/
 0b7a82e Fix a dir name typo (clang-346389c -> clang-r346389c).
+
+   * vendor/cosp/
+027bbcce vendor: add timestamp
 
    * vendor/pixelstyle/
 95327eb pixelstyle: use dark bootanimations
@@ -422,15 +604,17 @@ dbe5b486ca9a UPSTREAM: vring: Introduce vring_use_dma_api()
    * vendor/xiaomi/
 3c89d18c sdm845-common: Add QCOM's WFD implementation
 f33d8768 Regenerate
-04310968 sdm845 targets: Regen makefiles and add new targets to build guard
 
 =======================
      01-16-2019
 =======================
 
 
-   * build/make/
-c14e4aab9 That's why i shouldn't use automatic rebrand
+   * frameworks/base/
+60f7705dc4e Add MicroG support
+48a8c93eba3 core: Add support for MicroG
+5e0fdc0dc54 Add MicroG support
+774367696c1 core: Add support for MicroG
 
    * kernel/xiaomi/whyred/
 5ec66a676736 ANDROID: cuttlefish_defconfig: Enable vsock options
@@ -493,22 +677,21 @@ fdccad3 cospapps: fix derp
 81d9efe cospapps: update Lawnchair config
 
    * packages/apps/Settings/
+630c0d1629 Revert "Ambient Play: Introduce saving options [2/2]"
+3208462ad9 Merge branch 'pie' of https://github.com/despOSitoROM/packages_apps_Settings into pie
+84b5059d1f Revert "Ambient Play: Add summary to some settings"
+5da4b93b42 settings: more cosp changes
 66b06f6d6a settings: logo should look fine now
-553a2b4c1a Derp
-f29f6a4a18 Make it that way
-c5d05d8730 i did an oopsie lol
-68b3c38edd ITS DONE BOIS
-9fa802cabd oof second part bois
-d9a8d48dc8 add nice logo its shit but do i care?
 
    * vendor/cosp/
 726a83a0 vendor: include keyboard
 d0642011 vendor: switch to Lawnchair
-60f14392 vendor: include Lawnchair
-5eae4e38 vendor: fix file naming
 
    * vendor/pixelstyle/
 3d76c81 pixelstyle: remove Pixel Launcher
+
+   * vendor/xiaomi/
+04310968 sdm845 targets: Regen makefiles and add new targets to build guard
 
 =======================
      01-15-2019
@@ -516,6 +699,7 @@ d0642011 vendor: switch to Lawnchair
 
 
    * build/make/
+c14e4aab9 That's why i shouldn't use automatic rebrand
 87b6b9121 Initial COSP changes
 b4618ed3d We are COSP now
 
@@ -525,20 +709,23 @@ b4618ed3d We are COSP now
    * frameworks/base/
 af44c54d74c Initial COSP changes
 
-   * kernel/xiaomi/whyred/
-acb5ff1905fd ANDROID: cuttlefish_defconfig: remove DM_VERITY_HASH_PREFETCH_MIN_SIZE
-ec8fcb232d83 Revert "ANDROID: dm verity: add minimum prefetch size"
-c69bfa0ff38e ANDROID: f2fs: Complement "android_fs" tracepoint of read path
-
    * packages/apps/COSPapps/
 5ace528 Update Lawnchair to alpha_808
 62ec886 Remove not needed apps
 
    * packages/apps/Settings/
+553a2b4c1a Derp
+f29f6a4a18 Make it that way
+c5d05d8730 i did an oopsie lol
+68b3c38edd ITS DONE BOIS
+9fa802cabd oof second part bois
+d9a8d48dc8 add nice logo its shit but do i care?
 9e6b2306a3 SystemUpdatePreferenceController: rebrand
 bf44a121e1 Initial COSP changes
 
    * vendor/cosp/
+60f14392 vendor: include Lawnchair
+5eae4e38 vendor: fix file naming
 08cea93b Initial COSP changes #2
 788d0e07 Initial COSP changes
 
@@ -555,11 +742,9 @@ c666af0 Revert "Introduce our custom provider for Ambient Play"
 23d135738da fonts: Build different fonts.xml if EXCLUDE_SERIF_FONTS is true
 
    * kernel/xiaomi/whyred/
-75db4ab744fb Revert "msm: camera: isp: Handle frame drop due to delay   "
-4d00e6aaf670 Revert "qcacld-3.0: Add bound check for fixed_param->total_num_tx_power_levels"
-80adbddf62e7 Merge branch 'caf-merge' into pie
-70bda97f9bc0 Merge commit 'd65e05938e1446ae5d5026bc18e9b79135e72065' into pie
-884e988905b1 Merge remote-tracking branch 'aosp/android-4.4' into pie
+acb5ff1905fd ANDROID: cuttlefish_defconfig: remove DM_VERITY_HASH_PREFETCH_MIN_SIZE
+ec8fcb232d83 Revert "ANDROID: dm verity: add minimum prefetch size"
+c69bfa0ff38e ANDROID: f2fs: Complement "android_fs" tracepoint of read path
 
 =======================
      01-13-2019
@@ -570,6 +755,11 @@ c666af0 Revert "Introduce our custom provider for Ambient Play"
 0d9797de8 Remove useless build warning
 
    * kernel/xiaomi/whyred/
+75db4ab744fb Revert "msm: camera: isp: Handle frame drop due to delay   "
+4d00e6aaf670 Revert "qcacld-3.0: Add bound check for fixed_param->total_num_tx_power_levels"
+80adbddf62e7 Merge branch 'caf-merge' into pie
+70bda97f9bc0 Merge commit 'd65e05938e1446ae5d5026bc18e9b79135e72065' into pie
+884e988905b1 Merge remote-tracking branch 'aosp/android-4.4' into pie
 241f76b17c36 Merge 4.4.170 into android-4.4
 b83b3fa78445 Linux 4.4.170
 1bd63edb92ac power: supply: olpc_battery: correct the temperature units
@@ -660,9 +850,4 @@ bdb82196e75b xhci: Don't prevent USB2 bus suspend in state check intended for US
 
    * packages/apps/Nfc/
 91847cf2 Automatic translation import
-
-=======================
-     01-12-2019
-=======================
-
 
