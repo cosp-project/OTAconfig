@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Updates>
+    <Pie>
+        <potter>
+            <Filename>COSP-190126-OFFICIAL</Filename>
+            <BuildTime>1548495130</BuildTime>
+            <RomUrl>https://sia.pixeldrain.com/api/file/R5YuSKMH</RomUrl>
+            <MD5Url>https://sia.pixeldrain.com/api/file/Cm2B7-kh</MD5Url>
+            <ChangelogUrl>https://raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-potter.txt</ChangelogUrl>
+        </potter>
+    </Pie>
+</Updates>
