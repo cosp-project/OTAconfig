@@ -1,4 +1,26 @@
 =======================
+     01-25-2019
+=======================
+
+   * packages/apps/COSPapps/
+
+6f84395 cospapps: update Lawnchair to alpha-824
+
+=======================
+     01-24-2019
+=======================
+
+   * hardware/qcom/display-caf/msm8998/
+
+4761c67 Revert "sdm: Add support to set/get dsi clk."
+
+5a45cb7 Revert "qdutils: Add binder support to get/set dsi clk."
+
+   * vendor/cosp/
+
+a4894a8 vendor: fix ota xml file
+
+=======================
      01-23-2019
 =======================
 
