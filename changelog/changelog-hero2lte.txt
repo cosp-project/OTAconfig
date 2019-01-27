@@ -1,1 +1,519 @@
-Initial release
+=======================
+     01-27-2019
+=======================
+
+
+   * build/make/
+3dde2d7 build: Introduce SubstratumHelperService
+
+   * frameworks/base/
+84ffc4b base: fix subs
+a30626a OMS: handle target or overlay package disabled
+fc90cee OMS: try harder not to update assets if nothing changed
+898dc63 SubstratumService: Rewrite installation method for Pie InstallSession API
+49ecb2e Unbreak public api by hiding substratum interfaces
+1376d51 Pie OMS: allow non-system overlays from Substratum
+13ed46a SubstratumService: Refactor & cleanup according to AOSP conventions
+2ac8d6b base: modify/define custom overlay management
+b665423 SubstratumService: unify permissions
+07198f1 SubstratumService: allow CHANGE_OVERLAY_PACKAGES permission
+43f6dea base: Introduce SubstratumService
+833ada9 OMS: StrictMode and files under /data/system/theme/
+a7c004c Hold "volume up" during boot to disable all overlays
+5b3030e ThemeSafety: Introduce App Crash Intent
+36c81df ApplicationsState: add filter for Substratum overlays [2/2]
+d4f3a6e Extras: Add dynamic theme sound effects support
+cc7fc1c Extras: Add dynamic theme shutdown and boot animation support
+
+   * packages/apps/COSPSettings/
+a47520b Merge pull request #3 from kacskrz/pie
+37315ff Update PL translation
+
+   * packages/apps/COSPapps/
+6042940 cospapps: use new updater
+
+   * packages/apps/Settings/
+5fe5cf2 Merge pull request #2 from kacskrz/pie
+a0134af Update PL translation
+2b3928b Settings: Introduce Substratum changes.
+
+   * vendor/cosp/
+cfa6e09 ota: prepare for app changing
+2552dfc vendor: include subskey
+
+=======================
+     01-26-2019
+=======================
+
+
+   * packages/apps/COSPSettings/
+8258f7d cospsettings: hide updater when unofficial
+
+   * packages/apps/COSPapps/
+67fee1d Add SubsKey apk required for Substratum Service Mode
+a4a899c cospapps: update Lawnchair to alpha-825
+
+   * system/sepolicy/
+4c52a65 Merge pull request #1 from FacuM/pie
+8a5a6ad Android.mk: Remove the inconsequential warning
+5a53133 tee_listener isnt global
+3bd23d8 p subs integration test
+e5173dc sepolicy: address denials related to recovery and first boot
+67e2197 Implement sepolicy rules for substratum theming in p release
+1be2004 Introduce sepolicy exceptions for theme assets
+bdfd770 Initial sepolicy rules for substratum service
+
+=======================
+     01-25-2019
+=======================
+
+
+   * frameworks/base/
+b27b258 Add a property to override pre-o max aspect ratio
+38d7ae8 base: fix check for keyguard in edge gestures
+
+   * packages/apps/COSPapps/
+6f84395 cospapps: update Lawnchair to alpha-824
+
+   * vendor/cosp/
+a4894a8 vendor: fix ota xml file
+
+=======================
+     01-24-2019
+=======================
+
+
+   * hardware/qcom/display-caf/msm8998/
+4761c67 Revert "sdm: Add support to set/get dsi clk."
+5a45cb7 Revert "qdutils: Add binder support to get/set dsi clk."
+
+=======================
+     01-23-2019
+=======================
+
+
+   * frameworks/base/
+238d175 fwb: Lock day night mode
+
+   * vendor/cosp/
+b81299d vendor: fixing ota
+eaac6bf vendor: fix ota config
+d9511f5 vendor: add new variable
+ffabf7a vendor: change naming
+
+=======================
+     01-22-2019
+=======================
+
+
+   * build/make/
+c0a07bb build: do it that way
+0afde58 build: revert some changes
+ca84f5e build: revert some changes
+
+   * device/samsung/hero-common/
+6dede63 January security vendor patch
+
+   * device/samsung/hero2lte/
+c67e2d2 Viper-ify
+
+   * device/samsung/herolte/
+cbae7aa Viper-ify
+
+   * frameworks/base/
+eb8e66f base: SystemUI: make navigation bar tuner great again
+faf1156 base: even more fixing
+1a7bd67 Add NavBar toggle [1/2]
+24dde66 Run NavBarTuner external
+4ac5d32 base: fixing errors
+eec51ce [1/2] base: implement OP like navigation gestures
+9330ba2 base: fix strings
+67c1452 base: SystemUI: fix inital navbar hide handling
+67812d0 base: SystemUI: bring back tuner navbar editor from N
+6798915 [1/2] base: navigation bar visibility control
+d5a2a88 base: bring omni utils back
+ee37020 [1/2] base: implement OP like navigation gestures
+c171f5f Revert "Pimp the power menu out [1/2]"
+6de1926 Revert "Powermenu Torch option [1/2]"
+
+   * packages/apps/COSPSettings/
+e17f178 cospsettings: derp
+644ec33 cospsettings: add missing import
+c88d0ce cospsettings: navbar toggle
+f8b3f7f cospsettings: adding more features
+fab8edd Move Gestures to COSPSettings (2/2)
+b2503ab Merge pull request #1 from cosp-   */pie
+aaceb05 cospsettings: add gestures settings back
+61485f0 Revert "Run NavBar tuner from COSPSettings"
+9b9874f Revert "Move Gestures to COSPSettings (2/2)"
+bd314aa Revert "Pimp the power menu out [2/2]"
+4976732 Revert "Add utils"
+bdb7bfd Revert "Add utils"
+5609d07 Revert "Powermenu Torch option [2/2]"
+d49e611 Revert "cospsettings: add missing strings"
+
+   * packages/apps/COSPapps/
+2b516b0 cospapps: remove firefox
+
+   * packages/apps/Settings/
+aa31a8e Move Gestures to COSPSettings (1/2)
+ece84f4 Revert "Move Gestures to COSPSettings (1/2)"
+
+   * vendor/cosp/
+9e69e2b vendor: include Jelly [2/2]
+
+   * vendor/pixelstyle/
+602cce4 pixelstyle: remove wellbeing
+
+=======================
+     01-21-2019
+=======================
+
+
+   * build/make/
+a8fa11e build: restore old packages
+
+   * device/samsung/hero2lte/
+ef42a4b Update AndroidProducts.mk for cosp
+3c3f3b1 Add cosp
+
+   * device/samsung/herolte/
+cdcecf1 Update AndroidProducts.mk
+998f1a4 cosp
+
+   * frameworks/base/
+1076a6f Powermenu Torch option [1/2]
+8b78808 Pimp the power menu out [1/2]
+2521245 Avoid casting network traffic to StatusBarIconView to prevent crash
+7b7d486 Add network traffic monitor properly to statusbar icons
+
+   * kernel/samsung/universal8890/
+11a3d8f Linux 3.18.132
+f5b403f power: supply: olpc_battery: correct the temperature units
+90f6a37 genwqe: Fix size check
+35b7b61 ceph: don't update importing cap's mseq when handing cap export
+2a88156 9p/net: put a lower bound on msize
+9bb4662 b43: Fix error in cordic routine
+6da909e gfs2: Fix loop in gfs2_rbm_find
+38fdaec dlm: memory leaks on error path in dlm_user_request()
+b8c17e4 dlm: lost put_lkb on error path in receive_convert() and receive_unlock()
+f869aef dlm: possible memory leak on error path in create_lkb()
+49cfa9f dlm: fixed memory leaks after failed ls_remove_names allocation
+09671c5 ALSA: usb-audio: Fix an out-of-bound read in create_composite_quirks
+9bf57d2 ALSA: usb-audio: Avoid access before bLength check in build_audio_procunit()
+b09c0c3 ALSA: cs46xx: Potential NULL dereference in probe
+490f718 sunrpc: use SVC_NET() in svcauth_gss_* functions
+dfad003 sunrpc: fix cache_head leak due to queued request
+b3a2862 fork: record start_time late
+08707bd scsi: zfcp: fix posting too many status read buffers leading to adapter shutdown
+752f788 CIFS: Fix error mapping for SMB2_LOCK command which caused OFD lock problem
+cf131ca MIPS: Align kernel load address to 64KB
+4a3a197 MIPS: Ensure pmd_present() returns false after pmd_mknotpresent()
+0b94f80 media: vivid: free bitmap_cap when updating std/timings/etc.
+19e1247 cdc-acm: fix abnormal DATA RX issue for Mediatek Preloader.
+fc57186 ext4: force inode writes when nfsd calls commit_metadata()
+5050f6e ext4: missing unlock/put_page() in ext4_try_to_write_inline_data()
+92ce3371 ext4: fix possible use after free in ext4_quota_enable
+dd041c7 KVM: x86: Use jmp to invoke kvm_spurious_fault() from .fixup
+7a9d28f usb: r8a66597: Fix a possible concurrency use-after-free bug in r8a66597_endpoint_disable()
+4370e64 USB: serial: pl2303: add ids for Hewlett-Packard HP POS pole displays
+35d6f1b sock: Make sock->sk_stamp thread-safe
+34cd06e xen/netfront: tolerate frags with no data
+f750796 VSOCK: Send reset control packet when socket is partially bound
+899a6a5 vhost: make sure used idx is seen before log in vhost_add_used_n()
+12709b9 sctp: initialize sin6_flowinfo for ipv6 addrs in sctp_inet6addr_event
+1dc7426 packet: validate address length if non-zero
+d26c1f2 packet: validate address length
+d1fe316 netrom: fix locking in nr_find_socket()
+1067e63 isdn: fix kernel-infoleak in capi_unlocked_ioctl
+203ab8c ipv6: explicitly initialize udp6_addr in udp_sock_create6()
+78d724b ibmveth: fix DMA unmap error in ibmveth_xmit_start error path
+4ec34b0 ax25: fix a use-after-free in ax25_fillin_cb()
+a1fe332 x86/mtrr: Don't copy uninitialized gentry fields back to userspace
+d25eba8 Drivers: hv: vmbus: Return -EINVAL for the sys files for unopened channels
+ff67d53 gpio: max7301: fix driver for use with CONFIG_VMAP_STACK
+5699833 mmc: omap_hsmmc: fix DMA API warning
+6ac892f mmc: core: Reset HPI enabled state during re-init and in case of errors
+0afac9f USB: serial: option: add HP lt4132
+52fcb4c USB: hso: Fix OOB memory access in hso_probe/hso_get_config_data
+
+   * packages/apps/COSPSettings/
+c86d742 cospsettings: add missing strings
+383857c Powermenu Torch option [2/2]
+b7fa44a Add utils
+e17c1f8 Add utils
+6ba048d Pimp the power menu out [2/2]
+db46ea6 Move Gestures to COSPSettings (2/2)
+42c0512 Run NavBar tuner from COSPSettings
+5b36365 cospsettings: add missing lines
+b392420 cospsettings: add missing files
+
+   * packages/apps/Settings/
+0f472df Move Gestures to COSPSettings (1/2)
+
+   * vendor/cosp/
+9be36ba vendor: restoring old packages
+
+=======================
+     01-20-2019
+=======================
+
+
+   * frameworks/base/
+2df1f09e Status network traffic [1/2]
+8084f74 base: it looks better now
+
+   * hardware/qcom/power/
+75e7a3a power: Kill "Failed to acquire lock" log
+
+   * packages/apps/COSPSettings/
+7f7d32b Status network traffic [2/2]
+586cccd cospsettings: now it looks better
+
+   * packages/apps/Settings/
+cfabc1d Create ic_homepage_cosp.xml
+b16a7cb Update and rename ic_homepage_cosp.xml to ic_settings_cosp.xml
+
+   * packages/apps/SettingsIntelligence/
+5830b6e Fix dark style issues
+
+   * vendor/cosp/
+c42de22 ota: add md5 again
+
+=======================
+     01-19-2019
+=======================
+
+
+   * build/soong/
+5df6e6b okay, you don't like it
+d5ffadf soong: fix derp
+7557baa soong: add ota_conf to installclean
+
+   * frameworks/base/
+3a677aa base: add systemui tuner
+e41b14e base: fix next derps
+985b064 base: SystemUI: add back QS hide label
+2e17739 base: add missing lines
+4452a60 base: fuckin finally
+e8cc448 Revert "Introduce Ambient Indication Interface"
+48649fe Merge branch 'pie' of https://github.com/despOSitoROM/frameworks_base into pie
+f87d5b1 base: removing not needed things
+51cf82f change a few things here hopin i didnt derp
+3fa8976 base: SystemUI: Allow user to add/remove QS with one click
+606fb50 base: SystemUI: add QS rows config
+a157b37 base: SystemUI: make QS columns count configurable
+c367672 Revert "SystemUI: Implement weather on lockscreen like Pixels"
+763654d base: fixing building errors
+
+   * hardware/qcom/display/
+329d459 Make memtrack build with the VNDK.
+08b1876 Add missing includes.
+a2eefae libmemtrack: Add open method for msm8974.memtrack
+
+   * packages/apps/COSPSettings/
+87d68e9 cospsettings: rebrand lockscreen settings
+
+   * packages/apps/COSPapps/
+125dcb4 fu## chromium, here comes firefox [1/2]
+f713f65 Revert "add chromium lmao"
+
+   * packages/apps/Settings/
+d33ee85 settings: remove weather leftovers
+
+   * vendor/cosp/
+a1523ac ota: i hope this will work this time
+c2b6a32 fu## chromium, here comes firefox [2/2]
+1282982 ota: fix derps
+f3011ae enable chromium [2/2]
+
+   * vendor/pixelstyle/
+c17976c Revert "Ship WeatherClient"
+
+=======================
+     01-18-2019
+=======================
+
+
+   * development/
+8e09e63 make-key: Enforce PBEv1 password-protected signing keys
+
+   * frameworks/base/
+bf1fffc LockscreenCharging: squashed (1/3) needed system/core patch based on: [2/2] frameworks: show charging current & voltage on lockscreen by yank555-lu [2/2]Base: show more battery info on lockscreen when charging by yank555-lu LockscreenCharging: Use double for mChargingVoltage and show as4.XV by xyyx Lockscreen charging: Formatting improvements by nathanchance
+af9810f base: add missing lines
+
+   * packages/apps/COSPSettings/
+0076d3a cospsettings: add missing files
+c45e492 LockscreenCharging: squashed (3/3)
+6fdcda2 Add back a helper pref that holds a system setting.
+24096b3 Add back a helper pref that holds a system setting.
+9d29b3f cospsettings: add statusbar tuner
+fa77f06 cospsettings: use standard prefernece instead of cardview
+a132fc8 cospsettings: add updater
+5a1f2e2 cospsettings: remove things i don't need now
+46e65b9 Rebrand to COSP
+e1e619d Initial KCUFSettings
+4d6d666 Testing
+
+   * packages/apps/COSPapps/
+912a27a add chromium lmao
+
+   * packages/apps/Settings/
+81f9b29 settings: update cospsettings icon
+844a891 Introduce COSPSettings
+b34506e Add custom KCUFSettings dashboard
+
+   * system/core/
+13579a4 LockscreenCharging: squashed (2/3)
+
+   * vendor/cosp/
+1744b0d vendor: OTA fixing
+1bcf4df Merge branch 'pie' of https://github.com/despOSitoROM/vendor_cosp into pie
+05cf566 vendor: fixing OTA
+33cdec5 venodr: chmod ota script
+ce1815e vendor: unify names with OTA
+31fd625 Merge branch 'pie' of https://github.com/despOSitoROM/vendor_cosp into pie
+dfacac1 vendor: prepare for OTA
+b10df68 vendor: prepare for OTA
+027bbcc vendor: add timestamp
+
+   * vendor/pixelstyle/
+fd9a9ae pixelstyle: fix bootanimations
+
+=======================
+     01-17-2019
+=======================
+
+
+   * device/custom/sepolicy/
+dd6d06c common: Improve label of I/O sched tuning nodes
+bb389cc sepolicy: Address perf HAL denial with boost enabled
+
+   * device/samsung/hero-common/
+43b3a35 Prepare for AOSP rom (2/2)
+c09e57f Update system_prop.mk
+facdb32 Prepare for AOSP based roms
+
+   * device/samsung/hero2lte/
+8905e8b add pixel experience
+
+   * device/samsung/herolte/
+7bc81cc add pixel experience
+
+   * frameworks/base/
+653f5fc Remove leftovers
+e9aa203 Revert "Ambient Play: Various fixes."
+45ef710 Revert "Ambient Play: Hide AmbientIndication if Song and Artist are null."
+73bbe06 Revert "Ambient Play: Workaround for Pie (allow cleartext traffic)."
+c375ae6 Revert "RecoginitionObserverFactory : Check if we have aquired resources before releasing it."
+a993800 Revert "RecoginitionObserverFactory: Change Thread priority"
+9ee7ef1 Revert "AmbientPlay: Rework"
+974ddea Revert "Ambient Play: Introduce our custom provider"
+c4051e2 Revert "Ambient Play: Introduce saving options [1/2]"
+375c531 Revert "AmbientPlay: Introduce history manager [3/4]"
+8430b2a Revert "AmbientPlay: Move strings to fw/res"
+
+   * hardware/qcom/display-caf/msm8974/
+33f3c20 Make memtrack build with the VNDK.
+5acc37c Add missing includes.
+e3737ee libmemtrack: Add open method for msm8974.memtrack
+
+   * hardware/qcom/power/
+c2900e9 power: Build with with BOARD_VNDK_VERSION
+13ee524 power: Handle launch and interaction hints for perf HAL platforms
+c267a0e power: msm8937: Update power profile settings
+7ed6e86 power: Add specific powerhal for msm8937
+
+   * hardware/samsung/
+167acac No advanced display
+
+   * packages/apps/Settings/
+4d89ffc Revert some strings
+3776fbd Revert "Add preference for Ambient Play"
+396899c Revert "AmbientPlay: Introduce history manager [4/4]"
+630c0d1 Revert "Ambient Play: Introduce saving options [2/2]"
+3208462 Merge branch 'pie' of https://github.com/despOSitoROM/packages_apps_Settings into pie
+84b5059 Revert "Ambient Play: Add summary to some settings"
+5da4b93 settings: more cosp changes
+
+   * prebuilts/clang/host/linux-x86/
+0b7a82e Fix a dir name typo (clang-346389c -> clang-r346389c).
+
+   * vendor/pixelstyle/
+95327eb pixelstyle: use dark bootanimations
+
+=======================
+     01-16-2019
+=======================
+
+
+   * frameworks/base/
+60f7705 Add MicroG support
+48a8c93 core: Add support for MicroG
+5e0fdc0 Add MicroG support
+7743676 core: Add support for MicroG
+
+   * packages/apps/COSPapps/
+fdccad3 cospapps: fix derp
+81d9efe cospapps: update Lawnchair config
+
+   * packages/apps/Settings/
+66b06f6 settings: logo should look fine now
+553a2b4 Derp
+f29f6a4 Make it that way
+c5d05d8 i did an oopsie lol
+68b3c38 ITS DONE BOIS
+9fa802c oof second part bois
+d9a8d48 add nice logo its shit but do i care?
+
+   * vendor/cosp/
+726a83a vendor: include keyboard
+d064201 vendor: switch to Lawnchair
+60f1439 vendor: include Lawnchair
+5eae4e3 vendor: fix file naming
+
+   * vendor/pixelstyle/
+3d76c81 pixelstyle: remove Pixel Launcher
+
+=======================
+     01-15-2019
+=======================
+
+
+   * build/make/
+c14e4aa That's why i shouldn't use automatic rebrand
+87b6b91 Initial COSP changes
+b4618ed We are COSP now
+
+   * build/soong/
+1582cdd Initial COSP changes
+
+   * frameworks/base/
+af44c54 Initial COSP changes
+
+   * hardware/samsung/
+10a10e4 Add missing semco3rd mac address
+
+   * packages/apps/COSPapps/
+5ace528 Update Lawnchair to alpha_808
+62ec886 Remove not needed apps
+
+   * packages/apps/Settings/
+9e6b230 SystemUpdatePreferenceController: rebrand
+bf44a12 Initial COSP changes
+
+   * vendor/cosp/
+08cea93 Initial COSP changes #2
+788d0e0 Initial COSP changes
+
+   * vendor/pixelstyle/
+c666af0 Revert "Introduce our custom provider for Ambient Play"
+
+=======================
+     01-14-2019
+=======================
+
+
+   * frameworks/base/
+7ef5e0f framework: Battery led default value should follow notification led
+23d1357 fonts: Build different fonts.xml if EXCLUDE_SERIF_FONTS is true
