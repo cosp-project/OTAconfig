@@ -71,3 +71,23 @@ a0134af2d6 Update PL translation
    * vendor/cosp/
 cfa6e09b ota: prepare for app changing
 2552dfc5 vendor: include subskey
+
+=======================
+     01-26-2019
+=======================
+   * packages/apps/COSPSettings/
+8258f7d cospsettings: hide updater when unofficial
+   
+   * packages/apps/COSPapps/
+67fee1d Add SubsKey apk required for Substratum Service Mode
+a4a899c cospapps: update Lawnchair to alpha-825
+
+   * system/sepolicy/
+4c52a65c Merge pull request #1 from FacuM/pie
+8a5a6ada Android.mk: Remove the inconsequential warning
+5a531333 tee_listener isnt global
+3bd23d8b p subs integration test
+e5173dcb sepolicy: address denials related to recovery and first boot
+67e2197a Implement sepolicy rules for substratum theming in p release
+1be20043 Introduce sepolicy exceptions for theme assets
+bdfd7700 Initial sepolicy rules for substratum service
