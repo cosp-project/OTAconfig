@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Updates>
+    <Pie>
+        <cedric>
+            <Filename>COSP-190126-OFFICIAL</Filename>
+            <BuildTime>1548524597</BuildTime>
+            <RomUrl>https://sia.pixeldrain.com/api/file/faVScko7</RomUrl>
+            <MD5Url>https://sia.pixeldrain.com/api/file/7YxGnJHB</MD5Url>
+            <ChangelogUrl>https://raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-cedric.txt</ChangelogUrl>
+        </cedric>
+    </Pie>
+</Updates>
