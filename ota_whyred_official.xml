@@ -2,10 +2,10 @@
 <Updates>
     <Pie>
         <whyred>
-            <Filename>COSP-190124-OFFICIAL</Filename>
+            <Filename>COSP-190129-OFFICIAL</Filename>
             <BuildTime>1548341465</BuildTime>
-            <RomUrl>https://mirror.codebucket.de/cosp/whyred/official/COSP-190124-OFFICIAL-whyred.zip</RomUrl>
-            <MD5Url>https://mirror.codebucket.de/cosp/whyred/official/COSP-190124-OFFICIAL-whyred.zip.md5sum</MD5Url>
+            <RomUrl>https://mirror.codebucket.de/cosp/whyred/official/COSP-190129-OFFICIAL-whyred.zip</RomUrl>
+            <MD5Url>https://mirror.codebucket.de/cosp/whyred/official/COSP-190129-OFFICIAL-whyred.zip.md5sum</MD5Url>
             <ChangelogUrl>https://raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-whyred.txt</ChangelogUrl>
         </whyred>
     </Pie>
