@@ -1,0 +1,426 @@
+=======================
+     01-30-2019
+=======================
+
+
+   * external/icu/
+0d011198e DO NOT MERGE: Fix Morocco to use rearguard format correctly in ICU.
+9e0ab1daa DO NOT MERGE: Update Android ICU tzdata from 2018g to 2018i.
+ca0fde0a8 Revert "Update Android ICU tzdata from 2018g to 2018i"
+
+   * system/timezone/
+378350a DO NOT MERGE: Fix Morocco to use rearguard format correctly in ICU.
+a545fe9 DO NOT MERGE: Update Android tzdata from 2018g to 2018i.
+9477ff8 Revert "Update Android tzdata from 2018g to 2018i"
+
+=======================
+     01-29-2019
+=======================
+
+
+   * frameworks/base/
+4a8a257270a utils: action.java: temp fix build in dismissKeyguard on 9.0
+6248137e3b5 base: gzosp: import gzosp utils
+
+   * packages/apps/COSPapps/
+bfb16a4 cospapps: update ota app
+
+=======================
+     01-28-2019
+=======================
+
+
+   * frameworks/av/
+75f1f6d14 Screenrecord service improvements and QSTile [2/2]
+
+   * frameworks/base/
+d69593fa341 base: fix screenrecording
+62bf2217eec Save screenrecord in "Screenrecords" directory
+2f30c066815 base: bring back screenrecord
+4485166f009 Screenrecord: show chrono and total recording duration/size
+91522ab26a8 SystemUI: persist screenrecord quality level
+c35953c2dc1 Screenrecord: Hide the red stop button but keep clickable
+e063b8fd527 Screenrecord: Show a share/delete notification when stopped
+461b777b687 Screenrecord service improvements and QSTile [1/2]
+76ba618be68 Screenshot: Fix possible NPE
+3e9111b5c24 SystemUI: Fix crash when taking screenshot in partial screenshot view
+a208ace8da6 Fix aosp partial screenshot
+0f8aa777c1e base: persist screenshot type in settings
+1f0a750acdc Aosp hidden partial screenshot code fixes
+5fc7cf5435c base: add utils
+4794a8dab24 Added toast when a screenshot is deleted
+eed9a054672 Add api to take screenshots
+7a6019aa4ad Add intent for screenshot
+d326cd4d35e Merge branch 'test' of https://github.com/cosp-   */frameworks_base into test
+abe02752251 New screenshot QS tile vectors
+c1b09709ad1 base: remove not needed strings
+88be255c705 Add partial/full screenshot QS tile single tap to choose the mode, long press to fire
+
+   * packages/apps/COSPSettings/
+a47520b Merge pull request #3 from kacskrz/pie
+37315ff Update PL translation
+
+   * packages/apps/COSPapps/
+0243538 cospapps: update ota app
+6042940 cospapps: use new updater
+
+   * packages/apps/Settings/
+5fe5cf2624 Merge pull request #2 from kacskrz/pie
+a0134af2d6 Update PL translation
+
+   * vendor/cosp/
+cfa6e09b ota: prepare for app changing
+
+=======================
+     01-27-2019
+=======================
+
+
+   * build/make/
+3dde2d73b build: Introduce SubstratumHelperService
+
+   * frameworks/base/
+84ffc4bf385 base: fix subs
+a30626a18fc OMS: handle target or overlay package disabled
+fc90cee93c5 OMS: try harder not to update assets if nothing changed
+898dc63916d SubstratumService: Rewrite installation method for Pie InstallSession API
+49ecb2e42b6 Unbreak public api by hiding substratum interfaces
+1376d5127c7 Pie OMS: allow non-system overlays from Substratum
+13ed46a5444 SubstratumService: Refactor & cleanup according to AOSP conventions
+2ac8d6bcb8e base: modify/define custom overlay management
+b6654231507 SubstratumService: unify permissions
+07198f1fa35 SubstratumService: allow CHANGE_OVERLAY_PACKAGES permission
+43f6deaa9f6 base: Introduce SubstratumService
+833ada98b23 OMS: StrictMode and files under /data/system/theme/
+a7c004cd4af Hold "volume up" during boot to disable all overlays
+5b3030e2ba9 ThemeSafety: Introduce App Crash Intent
+36c81df8995 ApplicationsState: add filter for Substratum overlays [2/2]
+d4f3a6e2aa0 Extras: Add dynamic theme sound effects support
+cc7fc1c3af6 Extras: Add dynamic theme shutdown and boot animation support
+
+   * hardware/qcom/display-caf/msm8996/
+3cfb2358 Merge tag 'LA.UM.7.6.2.r1-04300-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD
+
+   * packages/apps/COSPSettings/
+8258f7d cospsettings: hide updater when unofficial
+
+   * packages/apps/COSPapps/
+67fee1d Add SubsKey apk required for Substratum Service Mode
+a4a899c cospapps: update Lawnchair to alpha-825
+
+   * packages/apps/Settings/
+2b3928b506 Settings: Introduce Substratum changes.
+
+   * system/sepolicy/
+4c52a65c Merge pull request #1 from FacuM/pie
+8a5a6ada Android.mk: Remove the inconsequential warning
+5a531333 tee_listener isnt global
+3bd23d8b p subs integration test
+e5173dcb sepolicy: address denials related to recovery and first boot
+67e2197a Implement sepolicy rules for substratum theming in p release
+1be20043 Introduce sepolicy exceptions for theme assets
+bdfd7700 Initial sepolicy rules for substratum service
+
+   * vendor/cosp/
+2552dfc5 vendor: include subskey
+
+=======================
+     01-26-2019
+=======================
+
+
+   * frameworks/base/
+b27b258976b Add a property to override pre-o max aspect ratio
+38d7ae89859 base: fix check for keyguard in edge gestures
+
+   * packages/apps/COSPapps/
+6f84395 cospapps: update Lawnchair to alpha-824
+
+=======================
+     01-25-2019
+=======================
+
+
+   * vendor/cosp/
+a4894a86 vendor: fix ota xml file
+
+=======================
+     01-24-2019
+=======================
+
+
+   * frameworks/base/
+238d175d924 fwb: Lock day night mode
+
+   * vendor/cosp/
+b81299da vendor: fixing ota
+eaac6bf2 vendor: fix ota config
+d9511f5e vendor: add new variable
+
+=======================
+     01-23-2019
+=======================
+
+
+   * build/make/
+c0a07bbc8 build: do it that way
+0afde5838 build: revert some changes
+ca84f5e1c build: revert some changes
+
+   * frameworks/base/
+eb8e66f845a base: SystemUI: make navigation bar tuner great again
+faf1156e4c0 base: even more fixing
+1a7bd6751eb Add NavBar toggle [1/2]
+24dde663552 Run NavBarTuner external
+4ac5d3260fe base: fixing errors
+eec51cee2e4 [1/2] base: implement OP like navigation gestures
+9330ba2811d base: fix strings
+67c1452db0b base: SystemUI: fix inital navbar hide handling
+67812d06ab2 base: SystemUI: bring back tuner navbar editor from N
+
+   * packages/apps/COSPSettings/
+e17f178 cospsettings: derp
+644ec33 cospsettings: add missing import
+c88d0ce cospsettings: navbar toggle
+f8b3f7f cospsettings: adding more features
+fab8edd Move Gestures to COSPSettings (2/2)
+b2503ab Merge pull request #1 from cosp-   */pie
+aaceb05 cospsettings: add gestures settings back
+
+   * packages/apps/COSPapps/
+2b516b0 cospapps: remove firefox
+
+   * packages/apps/Settings/
+aa31a8ebf1 Move Gestures to COSPSettings (1/2)
+
+   * vendor/cosp/
+ffabf7a1 vendor: change naming
+9e69e2ba vendor: include Jelly [2/2]
+
+   * vendor/pixelstyle/
+602cce4 pixelstyle: remove wellbeing
+
+=======================
+     01-22-2019
+=======================
+
+
+   * frameworks/base/
+67989157805 [1/2] base: navigation bar visibility control
+d5a2a88c4a0 base: bring omni utils back
+ee37020f599 [1/2] base: implement OP like navigation gestures
+c171f5f3945 Revert "Pimp the power menu out [1/2]"
+6de192612f3 Revert "Powermenu Torch option [1/2]"
+1076a6f15ac Powermenu Torch option [1/2]
+8b78808f61f Pimp the power menu out [1/2]
+
+   * packages/apps/COSPSettings/
+61485f0 Revert "Run NavBar tuner from COSPSettings"
+9b9874f Revert "Move Gestures to COSPSettings (2/2)"
+bd314aa Revert "Pimp the power menu out [2/2]"
+4976732 Revert "Add utils"
+bdb7bfd Revert "Add utils"
+5609d07 Revert "Powermenu Torch option [2/2]"
+d49e611 Revert "cospsettings: add missing strings"
+c86d742 cospsettings: add missing strings
+383857c Powermenu Torch option [2/2]
+b7fa44a Add utils
+e17c1f8 Add utils
+6ba048d Pimp the power menu out [2/2]
+
+   * packages/apps/Settings/
+ece84f41bd Revert "Move Gestures to COSPSettings (1/2)"
+0f472dfe18 Move Gestures to COSPSettings (1/2)
+
+=======================
+     01-21-2019
+=======================
+
+
+   * build/make/
+a8fa11ed8 build: restore old packages
+
+   * frameworks/base/
+252124520de Avoid casting network traffic to StatusBarIconView to prevent crash
+7b7d48699eb Add network traffic monitor properly to statusbar icons
+2df1f09e8de Status network traffic [1/2]
+
+   * hardware/qcom/power/
+75e7a3a power: Kill "Failed to acquire lock" log
+
+   * packages/apps/COSPSettings/
+db46ea6 Move Gestures to COSPSettings (2/2)
+42c0512 Run NavBar tuner from COSPSettings
+5b36365 cospsettings: add missing lines
+b392420 cospsettings: add missing files
+7f7d32b Status network traffic [2/2]
+
+   * packages/apps/Settings/
+cfabc1d1de Create ic_homepage_cosp.xml
+b16a7cbcd3 Update and rename ic_homepage_cosp.xml to ic_settings_cosp.xml
+
+   * vendor/cosp/
+9be36ba6 vendor: restoring old packages
+
+=======================
+     01-20-2019
+=======================
+
+
+   * frameworks/base/
+8084f74bc3b base: it looks better now
+3a677aad787 base: add systemui tuner
+
+   * packages/apps/COSPSettings/
+586cccd cospsettings: now it looks better
+
+   * packages/apps/COSPapps/
+125dcb4 fu## chromium, here comes firefox [1/2]
+f713f65 Revert "add chromium lmao"
+
+   * packages/apps/SettingsIntelligence/
+5830b6e Fix dark style issues
+
+   * vendor/cosp/
+c42de220 ota: add md5 again
+a1523ac6 ota: i hope this will work this time
+c2b6a32c fu## chromium, here comes firefox [2/2]
+
+=======================
+     01-19-2019
+=======================
+
+
+   * build/soong/
+5df6e6b9 okay, you don't like it
+d5ffadf0 soong: fix derp
+7557baa2 soong: add ota_conf to installclean
+
+   * frameworks/base/
+e41b14ecc28 base: fix next derps
+985b0643f9d base: SystemUI: add back QS hide label
+2e177390a3f base: add missing lines
+4452a60eac2 base: fuckin finally
+e8cc448024f Revert "Introduce Ambient Indication Interface"
+48649fe427a Merge branch 'pie' of https://github.com/despOSitoROM/frameworks_base into pie
+f87d5b1d326 base: removing not needed things
+51cf82ff066 change a few things here hopin i didnt derp
+3fa89763aa7 base: SystemUI: Allow user to add/remove QS with one click
+606fb50b24d base: SystemUI: add QS rows config
+a157b378762 base: SystemUI: make QS columns count configurable
+c36767289b7 Revert "SystemUI: Implement weather on lockscreen like Pixels"
+763654da897 base: fixing building errors
+bf1fffc1d28 LockscreenCharging: squashed (1/3) needed system/core patch based on: [2/2] frameworks: show charging current & voltage on lockscreen by yank555-lu [2/2]Base: show more battery info on lockscreen when charging by yank555-lu LockscreenCharging: Use double for mChargingVoltage and show as4.XV by xyyx Lockscreen charging: Formatting improvements by nathanchance
+
+   * packages/apps/COSPSettings/
+87d68e9 cospsettings: rebrand lockscreen settings
+0076d3a cospsettings: add missing files
+c45e492 LockscreenCharging: squashed (3/3)
+6fdcda2 Add back a helper pref that holds a system setting.
+24096b3 Add back a helper pref that holds a system setting.
+9d29b3f cospsettings: add statusbar tuner
+
+   * packages/apps/COSPapps/
+912a27a add chromium lmao
+
+   * packages/apps/Settings/
+d33ee858a0 settings: remove weather leftovers
+81f9b294cc settings: update cospsettings icon
+
+   * system/core/
+13579a42c LockscreenCharging: squashed (2/3)
+
+   * vendor/cosp/
+12829828 ota: fix derps
+f3011ae4 enable chromium [2/2]
+1744b0d7 vendor: OTA fixing
+
+   * vendor/pixelstyle/
+c17976c Revert "Ship WeatherClient"
+
+=======================
+     01-18-2019
+=======================
+
+
+   * development/
+8e09e639b make-key: Enforce PBEv1 password-protected signing keys
+
+   * frameworks/base/
+af9810fce2a base: add missing lines
+
+   * packages/apps/COSPSettings/
+fa77f06 cospsettings: use standard prefernece instead of cardview
+a132fc8 cospsettings: add updater
+5a1f2e2 cospsettings: remove things i don't need now
+46e65b9 Rebrand to COSP
+e1e619d Initial KCUFSettings
+4d6d666 Testing
+
+   * packages/apps/Settings/
+844a891ac5 Introduce COSPSettings
+b34506e539 Add custom KCUFSettings dashboard
+
+   * vendor/cosp/
+1bcf4df4 Merge branch 'pie' of https://github.com/despOSitoROM/vendor_cosp into pie
+05cf5661 vendor: fixing OTA
+33cdec54 venodr: chmod ota script
+ce1815e3 vendor: unify names with OTA
+31fd6253 Merge branch 'pie' of https://github.com/despOSitoROM/vendor_cosp into pie
+dfacac17 vendor: prepare for OTA
+b10df681 vendor: prepare for OTA
+027bbcce vendor: add timestamp
+
+   * vendor/pixelstyle/
+fd9a9ae pixelstyle: fix bootanimations
+
+=======================
+     01-17-2019
+=======================
+
+
+   * device/custom/sepolicy/
+dd6d06c common: Improve label of I/O sched tuning nodes
+bb389cc sepolicy: Address perf HAL denial with boost enabled
+
+   * frameworks/base/
+653f5fc216b Remove leftovers
+e9aa20351fb Revert "Ambient Play: Various fixes."
+45ef7106709 Revert "Ambient Play: Hide AmbientIndication if Song and Artist are null."
+73bbe06446c Revert "Ambient Play: Workaround for Pie (allow cleartext traffic)."
+c375ae652bf Revert "RecoginitionObserverFactory : Check if we have aquired resources before releasing it."
+a9938002aa5 Revert "RecoginitionObserverFactory: Change Thread priority"
+9ee7ef13aca Revert "AmbientPlay: Rework"
+974ddeaaf79 Revert "Ambient Play: Introduce our custom provider"
+c4051e291a9 Revert "Ambient Play: Introduce saving options [1/2]"
+375c53109a6 Revert "AmbientPlay: Introduce history manager [3/4]"
+8430b2ac79f Revert "AmbientPlay: Move strings to fw/res"
+60f7705dc4e Add MicroG support
+48a8c93eba3 core: Add support for MicroG
+5e0fdc0dc54 Add MicroG support
+774367696c1 core: Add support for MicroG
+
+   * hardware/qcom/power/
+c2900e9 power: Build with with BOARD_VNDK_VERSION
+13ee524 power: Handle launch and interaction hints for perf HAL platforms
+c267a0e power: msm8937: Update power profile settings
+7ed6e86 power: Add specific powerhal for msm8937
+
+   * packages/apps/Settings/
+4d89ffc27d Revert some strings
+3776fbd34a Revert "Add preference for Ambient Play"
+396899c196 Revert "AmbientPlay: Introduce history manager [4/4]"
+630c0d1629 Revert "Ambient Play: Introduce saving options [2/2]"
+3208462ad9 Merge branch 'pie' of https://github.com/despOSitoROM/packages_apps_Settings into pie
+84b5059d1f Revert "Ambient Play: Add summary to some settings"
+5da4b93b42 settings: more cosp changes
+
+   * prebuilts/clang/host/linux-x86/
+0b7a82e Fix a dir name typo (clang-346389c -> clang-r346389c).
+
+   * vendor/cosp/
+726a83a0 vendor: include keyboard
+
+   * vendor/pixelstyle/
+95327eb pixelstyle: use dark bootanimations
+

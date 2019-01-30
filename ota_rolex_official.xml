@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Updates>
+    <Pie>
+        <rolex>
+            <Filename>COSP-190130-OFFICIAL-rolex</Filename>
+            <BuildTime>1548851286</BuildTime>
+            <RomUrl>https://sia.pixeldrain.com/api/file/kRmy539v</RomUrl>
+            <MD5Url>https://sia.pixeldrain.com/api/file/WWZqAZH1</MD5Url>
+            <ChangelogUrl>https://raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-rolex.txt</ChangelogUrl>
+        </rolex>
+    </Pie>
+</Updates>
