@@ -1,28 +1,184 @@
 =======================
-     01-26-2019
+     01-31-2019
+=======================
+
+
+   * frameworks/base/
+74e89a439ec base: SystemUI: tuner: fix reorder of mobile slots
+88a96bb7022 SystemUI: Add tuner interface to StatusBarSignalPolicy
+26dd55c88fa Volume panel location: load the bool once
+a0015d546fa SystemUI: allow devices override audio panel location
+fbb27c8c00e Themes: Expose autofill save dialog text color
+052eb2109e1 Themes: Expose a bool to tint notification app name
+30cb331424a Themes: Reload assets on overlay change: code improvements
+fc70618c4eb Themes: Do not use theme context for remote views
+0a64be9235f Themes: rename IconTextTint to IconTint
+e11280e50d7 Themes: Reload more assets on overlay change
+df726dbeef9 Themes: Fix notification overlay config
+20d9208cbd5 Themes: Add support for theming notifications
+579b65d62c1 Ignore vendor overlays that must be on system/overlay
+b81343f5c03 Themes: Expose two target preference divider color
+57f787eb3c6 Themes: Expose faststroller text for themes
+8322008abc6 Themes: Fix autofill save dialog
+ccf0f559192 SystemUI: Fix wrong SIM PIN message
+44a8f35af56 Enable enhanced call blocking by default.
+48599915f4e Wallpaper is half black after rotating quickly
+a6a9f01e8cf SystemUI: StatusBar - Fix Bluetooth Icon
+82b0b5647e4 base: support overlays in system
+762a8d34130 Themes: Remove color spans when using config_useDarkBgNotificationIconTinting
+53cd9255213 Themes: Add Theme.DeviceDefault.Resolver.Exposed
+921079afa41 Themes: add bool to optimize notification icon colors on dark backgrounds
+91f6ba97df7 Themes: Expose notification icon colors
+6f9937ff4a6 Themes: Set UserIcons tintMode to SRC_ATOP
+74f97828320 Themes: Expose QS tiles and label colors
+feb93be5a6b Themes: SystemUI: expose screen pinning colors
+31bc76b5667 Themes: SystemUI: Expose QS edit item decoration background color
+13d52ebb299 Themes: Allow Permission Icons to be fully themed
+f0b36474ee7 Themes: Allow Immersive cling colors to be fully themed
+7f076a7e603 Themes: Expose resolver hardcoded colors
+240ae9d0c82 Themes: Expose toast & tooltip text colors for themes
+1ff9e910f6f Themes: fixing
+cbc7bf7ed1f Themes: Reload assets on overlay change: code improvements
+a02c48624b5 Themes: Expose Keyguard affordance circle background
+5458d96e883 Themes: Allow volume slider and thumb to work with custom images.
+5f77d16de8a Themes: Expose Screenshot flash and background colors
+9cadb278cd7 Themes: Expose Keyboard Shortcuts Dialog
+585f8b9c6b0 Themes: graphics: ADB "N" icon compatible with OMS7
+89daa6fcd2b Themes: SystemUI: Expose switch bar title
+629c5fc4280 Themes: Allow Navbar ripple color to be themed
+630a4158dfa SQLite: Do integrity_check only once
+d8bd20109e5 SQLiteDatabase: Catch corrupt exception during transaction
+993432b84ed Add handling SQLiteDatabaseCorruptException
+12aa702574e android.view: Speed things up!!
+54612d35604 ViewConfiguration: support for max/min fling velocity
+6cb5b989bb0 frameworks: squash of leak & race fixes
+f5097e3e2fe core: touch response optimizations
+e5c3c4bd536 Allow faster app switching
+8d0f03e7802 Camera: Force HAL1 for predefined package list.
+f8c3e8113bc Fix StatusBar icons tinting when in split screen
+f45f9a9d2fa keyguard: Check for a null errString
+c384a08e4a3 SystemUI: Name Cellular Tile based on carrier
+5d1efd4d738 base: SystemUI: fix status bar mobile view layout problem
+bd636426f3a [1/2] base: op gesture tweaks
+
+   * packages/apps/COSPSettings/
+44cc3a6 cospsettings: fix omni gestures indexing
+d097eec [2/2] COSPSettings: op gesture tweaks
+
+=======================
+     01-30-2019
+=======================
+
+
+   * vendor/xiaomi/
+c9f059a3 sdm845-common: update blobs from 9.1.17
+
+=======================
+     01-29-2019
+=======================
+
+
+   * external/icu/
+0d011198e DO NOT MERGE: Fix Morocco to use rearguard format correctly in ICU.
+9e0ab1daa DO NOT MERGE: Update Android ICU tzdata from 2018g to 2018i.
+ca0fde0a8 Revert "Update Android ICU tzdata from 2018g to 2018i"
+
+   * frameworks/base/
+4a8a257270a utils: action.java: temp fix build in dismissKeyguard on 9.0
+6248137e3b5 base: gzosp: import gzosp utils
+
+   * hardware/qcom/audio-caf/msm8996/
+814f60cdb Build audio.primary.* with BOARD_VNDK_VERSION
+
+   * packages/apps/COSPapps/
+bfb16a4 cospapps: update ota app
+
+   * system/timezone/
+378350a DO NOT MERGE: Fix Morocco to use rearguard format correctly in ICU.
+a545fe9 DO NOT MERGE: Update Android tzdata from 2018g to 2018i.
+9477ff8 Revert "Update Android tzdata from 2018g to 2018i"
+
+=======================
+     01-28-2019
+=======================
+
+
+   * frameworks/av/
+75f1f6d14 Screenrecord service improvements and QSTile [2/2]
+
+   * frameworks/base/
+d69593fa341 base: fix screenrecording
+62bf2217eec Save screenrecord in "Screenrecords" directory
+2f30c066815 base: bring back screenrecord
+4485166f009 Screenrecord: show chrono and total recording duration/size
+91522ab26a8 SystemUI: persist screenrecord quality level
+c35953c2dc1 Screenrecord: Hide the red stop button but keep clickable
+e063b8fd527 Screenrecord: Show a share/delete notification when stopped
+461b777b687 Screenrecord service improvements and QSTile [1/2]
+76ba618be68 Screenshot: Fix possible NPE
+3e9111b5c24 SystemUI: Fix crash when taking screenshot in partial screenshot view
+a208ace8da6 Fix aosp partial screenshot
+0f8aa777c1e base: persist screenshot type in settings
+
+   * packages/apps/COSPapps/
+0243538 cospapps: update ota app
+
+=======================
+     01-27-2019
 =======================
 
 
    * build/make/
-62f9e6b9d build: Introduce SubstratumHelperService
+3dde2d73b build: Introduce SubstratumHelperService
 
    * frameworks/base/
-111cd3aa36a OMS: handle target or overlay package disabled
-522f62f16d5 OMS: try harder not to update assets if nothing changed
-97c3c0f18a5 SubstratumService: Rewrite installation method for Pie InstallSession API
-8dc42e56a97 Unbreak public api by hiding substratum interfaces
-260fb655b75 Pie OMS: allow non-system overlays from Substratum
-53088361422 SubstratumService: Refactor & cleanup according to AOSP conventions
-29b3086cb0b base: modify/define custom overlay management
-a164a472a44 SubstratumService: unify permissions
-76cf4aa7a28 SubstratumService: allow CHANGE_OVERLAY_PACKAGES permission
-03565fdd091 base: Introduce SubstratumService
-15947145051 OMS: StrictMode and files under /data/system/theme/
-dd363b9cc50 Hold "volume up" during boot to disable all overlays
-025a51b8e6b ThemeSafety: Introduce App Crash Intent
-f41edbf280e ApplicationsState: add filter for Substratum overlays [2/2]
-e87a1d137c6 Extras: Add dynamic theme sound effects support
-8df01bad46b Extras: Add dynamic theme shutdown and boot animation support
+1f0a750acdc Aosp hidden partial screenshot code fixes
+5fc7cf5435c base: add utils
+4794a8dab24 Added toast when a screenshot is deleted
+eed9a054672 Add api to take screenshots
+7a6019aa4ad Add intent for screenshot
+d326cd4d35e Merge branch 'test' of https://github.com/cosp-   */frameworks_base into test
+abe02752251 New screenshot QS tile vectors
+c1b09709ad1 base: remove not needed strings
+88be255c705 Add partial/full screenshot QS tile single tap to choose the mode, long press to fire
+84ffc4bf385 base: fix subs
+a30626a18fc OMS: handle target or overlay package disabled
+fc90cee93c5 OMS: try harder not to update assets if nothing changed
+898dc63916d SubstratumService: Rewrite installation method for Pie InstallSession API
+49ecb2e42b6 Unbreak public api by hiding substratum interfaces
+1376d5127c7 Pie OMS: allow non-system overlays from Substratum
+13ed46a5444 SubstratumService: Refactor & cleanup according to AOSP conventions
+2ac8d6bcb8e base: modify/define custom overlay management
+b6654231507 SubstratumService: unify permissions
+07198f1fa35 SubstratumService: allow CHANGE_OVERLAY_PACKAGES permission
+43f6deaa9f6 base: Introduce SubstratumService
+833ada98b23 OMS: StrictMode and files under /data/system/theme/
+a7c004cd4af Hold "volume up" during boot to disable all overlays
+5b3030e2ba9 ThemeSafety: Introduce App Crash Intent
+36c81df8995 ApplicationsState: add filter for Substratum overlays [2/2]
+d4f3a6e2aa0 Extras: Add dynamic theme sound effects support
+cc7fc1c3af6 Extras: Add dynamic theme shutdown and boot animation support
+
+   * packages/apps/COSPSettings/
+a47520b Merge pull request #3 from kacskrz/pie
+37315ff Update PL translation
+
+   * packages/apps/COSPapps/
+6042940 cospapps: use new updater
+
+   * packages/apps/Settings/
+5fe5cf2624 Merge pull request #2 from kacskrz/pie
+a0134af2d6 Update PL translation
+2b3928b506 Settings: Introduce Substratum changes.
+
+   * vendor/cosp/
+cfa6e09b ota: prepare for app changing
+2552dfc5 vendor: include subskey
+
+=======================
+     01-26-2019
+=======================
+
 
    * kernel/xiaomi/whyred/
 44a06063fa33 Merge tag 'v4.4.172' into pie
@@ -169,9 +325,6 @@ e071622ba4f9 BACKPORT: usb: host: plat: Enable xHCI plat runtime PM
 67fee1d Add SubsKey apk required for Substratum Service Mode
 a4a899c cospapps: update Lawnchair to alpha-825
 
-   * packages/apps/Settings/
-392aa28c2e Settings: Introduce Substratum changes.
-
    * system/sepolicy/
 4c52a65c Merge pull request #1 from FacuM/pie
 8a5a6ada Android.mk: Remove the inconsequential warning
@@ -194,6 +347,9 @@ b27b258976b Add a property to override pre-o max aspect ratio
    * packages/apps/COSPapps/
 6f84395 cospapps: update Lawnchair to alpha-824
 
+   * vendor/cosp/
+a4894a86 vendor: fix ota xml file
+
 =======================
      01-24-2019
 =======================
@@ -202,9 +358,6 @@ b27b258976b Add a property to override pre-o max aspect ratio
    * hardware/qcom/display-caf/msm8998/
 4761c67b Revert "sdm: Add support to set/get dsi clk."
 5a45cb7b Revert "qdutils: Add binder support to get/set dsi clk."
-
-   * vendor/cosp/
-a4894a86 vendor: fix ota xml file
 
 =======================
      01-23-2019
@@ -240,6 +393,11 @@ eec51cee2e4 [1/2] base: implement OP like navigation gestures
 9330ba2811d base: fix strings
 67c1452db0b base: SystemUI: fix inital navbar hide handling
 67812d06ab2 base: SystemUI: bring back tuner navbar editor from N
+67989157805 [1/2] base: navigation bar visibility control
+d5a2a88c4a0 base: bring omni utils back
+ee37020f599 [1/2] base: implement OP like navigation gestures
+c171f5f3945 Revert "Pimp the power menu out [1/2]"
+6de192612f3 Revert "Powermenu Torch option [1/2]"
 
    * packages/apps/COSPSettings/
 e17f178 cospsettings: derp
@@ -249,12 +407,20 @@ f8b3f7f cospsettings: adding more features
 fab8edd Move Gestures to COSPSettings (2/2)
 b2503ab Merge pull request #1 from cosp-   */pie
 aaceb05 cospsettings: add gestures settings back
+61485f0 Revert "Run NavBar tuner from COSPSettings"
+9b9874f Revert "Move Gestures to COSPSettings (2/2)"
+bd314aa Revert "Pimp the power menu out [2/2]"
+4976732 Revert "Add utils"
+bdb7bfd Revert "Add utils"
+5609d07 Revert "Powermenu Torch option [2/2]"
+d49e611 Revert "cospsettings: add missing strings"
 
    * packages/apps/COSPapps/
 2b516b0 cospapps: remove firefox
 
    * packages/apps/Settings/
 aa31a8ebf1 Move Gestures to COSPSettings (1/2)
+ece84f41bd Revert "Move Gestures to COSPSettings (1/2)"
 
    * vendor/cosp/
 9e69e2ba vendor: include Jelly [2/2]
@@ -275,24 +441,12 @@ de88068 Rename aosp_whyred.mk to cosp_whyred.mk
 ebfc832 Merge pull request #1 from PixelExperience-Devices/pie
 
    * frameworks/base/
-67989157805 [1/2] base: navigation bar visibility control
-d5a2a88c4a0 base: bring omni utils back
-ee37020f599 [1/2] base: implement OP like navigation gestures
-c171f5f3945 Revert "Pimp the power menu out [1/2]"
-6de192612f3 Revert "Powermenu Torch option [1/2]"
 1076a6f15ac Powermenu Torch option [1/2]
 8b78808f61f Pimp the power menu out [1/2]
 252124520de Avoid casting network traffic to StatusBarIconView to prevent crash
 7b7d48699eb Add network traffic monitor properly to statusbar icons
 
    * packages/apps/COSPSettings/
-61485f0 Revert "Run NavBar tuner from COSPSettings"
-9b9874f Revert "Move Gestures to COSPSettings (2/2)"
-bd314aa Revert "Pimp the power menu out [2/2]"
-4976732 Revert "Add utils"
-bdb7bfd Revert "Add utils"
-5609d07 Revert "Powermenu Torch option [2/2]"
-d49e611 Revert "cospsettings: add missing strings"
 c86d742 cospsettings: add missing strings
 383857c Powermenu Torch option [2/2]
 b7fa44a Add utils
@@ -300,17 +454,13 @@ e17c1f8 Add utils
 6ba048d Pimp the power menu out [2/2]
 db46ea6 Move Gestures to COSPSettings (2/2)
 42c0512 Run NavBar tuner from COSPSettings
+5b36365 cospsettings: add missing lines
+b392420 cospsettings: add missing files
 
    * packages/apps/Settings/
-ece84f41bd Revert "Move Gestures to COSPSettings (1/2)"
 0f472dfe18 Move Gestures to COSPSettings (1/2)
-
-   * packages/apps/Updates/
-4ef1658 cospota: do it that way
-9a6aaf9 Revert "Revert "show app in launcher""
-697774a Revert "show app in launcher"
-2057017 ota: even more rebrand
-aae9e97 Merge branch 'p' of https://github.com/TeamHorizon/android_packages_apps_XenonOTA into pie
+cfabc1d1de Create ic_homepage_cosp.xml
+b16a7cbcd3 Update and rename ic_homepage_cosp.xml to ic_settings_cosp.xml
 
    * vendor/cosp/
 9be36ba6 vendor: restoring old packages
@@ -329,30 +479,20 @@ cdf0f21 whyred: compile kernel with clang 8.0.7
 
    * frameworks/base/
 2df1f09e8de Status network traffic [1/2]
+8084f74bc3b base: it looks better now
 
    * hardware/qcom/power/
 75e7a3a power: Kill "Failed to acquire lock" log
 
-   * packages/apps/COSPSettings/
-5b36365 cospsettings: add missing lines
-b392420 cospsettings: add missing files
-7f7d32b Status network traffic [2/2]
+   * kernel/xiaomi/whyred/
+abbcd10da86b whyred_defconfig: sync up with NoName
 
-   * packages/apps/Settings/
-cfabc1d1de Create ic_homepage_cosp.xml
-b16a7cbcd3 Update and rename ic_homepage_cosp.xml to ic_settings_cosp.xml
+   * packages/apps/COSPSettings/
+7f7d32b Status network traffic [2/2]
+586cccd cospsettings: now it looks better
 
    * packages/apps/SettingsIntelligence/
 5830b6e Fix dark style issues
-
-   * packages/apps/Updates/
-0a10096 XenonOTA: Add Credits List XML
-824ca1a XenonOTA: Implement Credits Dialog
-cb835f8 XenonOTA: Utils - Add RoundedImageView
-e55f2df XenonOTA: Utils - Add ImageLoader (With File & Memory Cache)
-24377f5 XenonOTA: OTAUtils - Add CopyStream Function
-b248d0e XenonOTA: Utils - Create "launchURL" Function
-5c239a5 i sure hope this is the only file
 
    * vendor/cosp/
 c42de220 ota: add md5 again
@@ -377,7 +517,6 @@ b439ae4 whyred: proprietary: Update perf blobs from Mi8 Lite
 4f6d423 whyred: Allow appdomain to get vendor_camera_prop
 
    * frameworks/base/
-8084f74bc3b base: it looks better now
 3a677aad787 base: add systemui tuner
 e41b14ecc28 base: fix next derps
 985b0643f9d base: SystemUI: add back QS hide label
@@ -389,6 +528,9 @@ f87d5b1d326 base: removing not needed things
 51cf82ff066 change a few things here hopin i didnt derp
 3fa89763aa7 base: SystemUI: Allow user to add/remove QS with one click
 606fb50b24d base: SystemUI: add QS rows config
+a157b378762 base: SystemUI: make QS columns count configurable
+c36767289b7 Revert "SystemUI: Implement weather on lockscreen like Pixels"
+763654da897 base: fixing building errors
 
    * hardware/qcom/display/
 329d459ba Make memtrack build with the VNDK.
@@ -396,7 +538,6 @@ f87d5b1d326 base: removing not needed things
 a2eefae27 libmemtrack: Add open method for msm8974.memtrack
 
    * kernel/xiaomi/whyred/
-abbcd10da86b whyred_defconfig: sync up with NoName
 8520ea3e28a6 msm-poweroff: always perform warm reset
 583c82f9e02c whyred: enable f2fs
 5cc3071615a2 f2fs: implement rapid GC for Android
@@ -410,7 +551,7 @@ ad122e13febc f2fs: fix compile warnings: 'struct *' declared inside parameter li
 e82807a25a67 f2fs: change error code to -ENOMEM from -EINVAL
 
    * packages/apps/COSPSettings/
-586cccd cospsettings: now it looks better
+87d68e9 cospsettings: rebrand lockscreen settings
 
    * packages/apps/COSPapps/
 125dcb4 fu## chromium, here comes firefox [1/2]
@@ -419,15 +560,14 @@ f713f65 Revert "add chromium lmao"
    * packages/apps/Settings/
 d33ee858a0 settings: remove weather leftovers
 
-   * packages/apps/Updates/
-525fdf7 ota: fix naming
-c01fc38 ota: rebrand
-
    * vendor/cosp/
 a1523ac6 ota: i hope this will work this time
 c2b6a32c fu## chromium, here comes firefox [2/2]
 12829828 ota: fix derps
 f3011ae4 enable chromium [2/2]
+
+   * vendor/pixelstyle/
+c17976c Revert "Ship WeatherClient"
 
    * vendor/xiaomi/
 4e5cb997 whyred: Update audio and perf blobs
@@ -442,14 +582,10 @@ c693ceb5 whyred: Update adsp blobs from Mi8 Lite
 8e09e639b make-key: Enforce PBEv1 password-protected signing keys
 
    * frameworks/base/
-a157b378762 base: SystemUI: make QS columns count configurable
-c36767289b7 Revert "SystemUI: Implement weather on lockscreen like Pixels"
-763654da897 base: fixing building errors
 bf1fffc1d28 LockscreenCharging: squashed (1/3) needed system/core patch based on: [2/2] frameworks: show charging current & voltage on lockscreen by yank555-lu [2/2]Base: show more battery info on lockscreen when charging by yank555-lu LockscreenCharging: Use double for mChargingVoltage and show as4.XV by xyyx Lockscreen charging: Formatting improvements by nathanchance
 af9810fce2a base: add missing lines
 
    * packages/apps/COSPSettings/
-87d68e9 cospsettings: rebrand lockscreen settings
 0076d3a cospsettings: add missing files
 c45e492 LockscreenCharging: squashed (3/3)
 6fdcda2 Add back a helper pref that holds a system setting.
@@ -458,17 +594,17 @@ c45e492 LockscreenCharging: squashed (3/3)
 fa77f06 cospsettings: use standard prefernece instead of cardview
 a132fc8 cospsettings: add updater
 5a1f2e2 cospsettings: remove things i don't need now
+46e65b9 Rebrand to COSP
+e1e619d Initial KCUFSettings
+4d6d666 Testing
 
    * packages/apps/COSPapps/
 912a27a add chromium lmao
 
    * packages/apps/Settings/
 81f9b294cc settings: update cospsettings icon
-
-   * packages/apps/Updates/
-a7fdf9e Add MicroG download option
-dbc951c cospota: fix derps in readme
-37f16d5 cospota: initial changes
+844a891ac5 Introduce COSPSettings
+b34506e539 Add custom KCUFSettings dashboard
 
    * system/core/
 13579a42c LockscreenCharging: squashed (2/3)
@@ -482,372 +618,8 @@ ce1815e3 vendor: unify names with OTA
 31fd6253 Merge branch 'pie' of https://github.com/despOSitoROM/vendor_cosp into pie
 dfacac17 vendor: prepare for OTA
 b10df681 vendor: prepare for OTA
-
-   * vendor/pixelstyle/
-c17976c Revert "Ship WeatherClient"
-fd9a9ae pixelstyle: fix bootanimations
-
-=======================
-     01-17-2019
-=======================
-
-
-   * device/custom/sepolicy/
-dd6d06c common: Improve label of I/O sched tuning nodes
-bb389cc sepolicy: Address perf HAL denial with boost enabled
-
-   * frameworks/base/
-653f5fc216b Remove leftovers
-e9aa20351fb Revert "Ambient Play: Various fixes."
-45ef7106709 Revert "Ambient Play: Hide AmbientIndication if Song and Artist are null."
-73bbe06446c Revert "Ambient Play: Workaround for Pie (allow cleartext traffic)."
-c375ae652bf Revert "RecoginitionObserverFactory : Check if we have aquired resources before releasing it."
-a9938002aa5 Revert "RecoginitionObserverFactory: Change Thread priority"
-9ee7ef13aca Revert "AmbientPlay: Rework"
-974ddeaaf79 Revert "Ambient Play: Introduce our custom provider"
-c4051e291a9 Revert "Ambient Play: Introduce saving options [1/2]"
-375c53109a6 Revert "AmbientPlay: Introduce history manager [3/4]"
-8430b2ac79f Revert "AmbientPlay: Move strings to fw/res"
-
-   * hardware/qcom/display-caf/msm8974/
-33f3c20a9 Make memtrack build with the VNDK.
-5acc37c93 Add missing includes.
-e3737eeb3 libmemtrack: Add open method for msm8974.memtrack
-
-   * hardware/qcom/power/
-c2900e9 power: Build with with BOARD_VNDK_VERSION
-13ee524 power: Handle launch and interaction hints for perf HAL platforms
-c267a0e power: msm8937: Update power profile settings
-7ed6e86 power: Add specific powerhal for msm8937
-
-   * kernel/xiaomi/whyred/
-96fd6d962275 Merge remote-tracking branch 'aosp/android-4.4' into pie
-b355d4f7ce55 Merge 4.4.171 into android-4.4
-c5feba4358ed Linux 4.4.171
-9615b6aeccbf sunrpc: use-after-free in svc_process_common()
-3897b4ae1fdc ext4: fix a potential fiemap/page fault deadlock w/ inline_data
-6b22de54346b crypto: cts - fix crash on short inputs
-61dd99c3788d i2c: dev: prevent adapter retries and timeout being set as minus value
-31f76d65612f ACPI: power: Skip duplicate power resource references in _PRx
-bb1de61e06c6 PCI: altera: Move retrain from fixup to altera_pcie_host_init()
-2f5e06cf8ff2 PCI: altera: Rework config accessors for use without a struct pci_bus
-db94a1ebabc4 PCI: altera: Poll for link training status after retraining the link
-704a120d8868 PCI: altera: Poll for link up status after retraining the link
-cb3ff0382e58 PCI: altera: Check link status before retrain link
-9efffbc8191d PCI: altera: Reorder read/write functions
-ecd77ebfa6dd PCI: altera: Fix altera_pcie_link_is_up()
-271137c03858 slab: alien caches must not be initialized if the allocation of the alien cache failed
-a04afa68c062 USB: Add USB_QUIRK_DELAY_CTRL_MSG quirk for Corsair K70 RGB
-7a87e23537db USB: storage: add quirk for SMI SM3350
-bbe85dc3ce39 USB: storage: don't insert sane sense for SPC3+ when bad sense specified
-460398af9f97 usb: cdc-acm: send ZLP for Telit 3G Intel based modems
-9c87abaf4d12 cifs: Fix potential OOB access of lock element array
-05ce0d9d5600 CIFS: Do not hide EINTR after sending network packets
-09527e390e81 btrfs: tree-checker: Fix misleading group system information
-40f2dd610635 btrfs: tree-checker: Check level for leaves and nodes
-98620167ed91 btrfs: Verify that every chunk has corresponding block group at mount time
-ee5e37a26791 btrfs: Check that each block group has corresponding chunk at mount time
-50962a7b4877 btrfs: validate type when reading a chunk
-42d263820480 btrfs: tree-checker: Detect invalid and empty essential trees
-ae94efaf2b60 btrfs: tree-checker: Verify block_group_item
-5b84bbce6073 btrfs: tree-check: reduce stack consumption in check_dir_item
-047ac3914e58 btrfs: tree-checker: use %zu format string for size_t
-a8f416492297 btrfs: tree-checker: Add checker for dir item
-7782b38595ae btrfs: tree-checker: Fix false panic for sanity test
-b3b3eaf72928 btrfs: tree-checker: Enhance btrfs_check_node output
-e74422ec1442 btrfs: Move leaf and node validation checker to tree-checker.c
-68c23d09749e btrfs: Add checker for EXTENT_CSUM
-56ab82441c33 btrfs: Add sanity check for EXTENT_DATA when reading out leaf
-dc7a1fbccd95 btrfs: Check if item pointer overlaps with the item itself
-4583bc2c6420 btrfs: Refactor check_leaf function for later expansion
-31c986aa7e69 btrfs: struct-funcs, constify readers
-89643604a879 Btrfs: fix emptiness check for dirtied extent buffers at check_leaf()
-452042d27b6d Btrfs: memset to avoid stale content in btree leaf
-79ddacdf1df2 Btrfs: kill BUG_ON in run_delayed_tree_ref
-d6719cf116b2 Btrfs: improve check_node to avoid reading corrupted nodes
-731b86679528 Btrfs: memset to avoid stale content in btree node block
-4b522570f974 Btrfs: fix BUG_ON in btrfs_mark_buffer_dirty
-1ef3ecf373ae Btrfs: check btree node's nritems
-dc059e58af01 Btrfs: detect corruption when non-root leaf has zero item
-4bf414d2ff57 Btrfs: fix em leak in find_first_block_group
-a155ec932226 Btrfs: check inconsistence between chunk and block group
-41fbc649308c Btrfs: add validadtion checks for chunk loading
-66b8c06f9365 btrfs: Enhance chunk validation check
-67405a1e780c btrfs: cleanup, stop casting for extent_map->lookup everywhere
-fea03efa24d4 ALSA: hda/realtek - Disable headset Mic VREF for headset mode of ALC225
-e137948e4b11 UPSTREAM: virtio: new feature to detect IOMMU device quirk
-7389e826abae UPSTREAM: vring: Use the DMA API on Xen
-6bb68f96a00a UPSTREAM: virtio_ring: Support DMA APIs
-dbe5b486ca9a UPSTREAM: vring: Introduce vring_use_dma_api()
-
-   * packages/apps/COSPSettings/
-46e65b9 Rebrand to COSP
-e1e619d Initial KCUFSettings
-4d6d666 Testing
-
-   * packages/apps/Settings/
-844a891ac5 Introduce COSPSettings
-b34506e539 Add custom KCUFSettings dashboard
-4d89ffc27d Revert some strings
-3776fbd34a Revert "Add preference for Ambient Play"
-396899c196 Revert "AmbientPlay: Introduce history manager [4/4]"
-
-   * prebuilts/clang/host/linux-x86/
-0b7a82e Fix a dir name typo (clang-346389c -> clang-r346389c).
-
-   * vendor/cosp/
 027bbcce vendor: add timestamp
 
    * vendor/pixelstyle/
-95327eb pixelstyle: use dark bootanimations
-
-   * vendor/xiaomi/
-3c89d18c sdm845-common: Add QCOM's WFD implementation
-f33d8768 Regenerate
-
-=======================
-     01-16-2019
-=======================
-
-
-   * frameworks/base/
-60f7705dc4e Add MicroG support
-48a8c93eba3 core: Add support for MicroG
-5e0fdc0dc54 Add MicroG support
-774367696c1 core: Add support for MicroG
-
-   * kernel/xiaomi/whyred/
-5ec66a676736 ANDROID: cuttlefish_defconfig: Enable vsock options
-06477f7ef8c1 UPSTREAM: vhost/vsock: fix reset orphans race with close timeout
-e633b6d8e0df UPSTREAM: vhost/vsock: fix use-after-free in network stack callers
-eb2ca3c19653 UPSTREAM: vhost: correctly check the iova range when waking virtqueue
-732e0b13c5d1 UPSTREAM: vhost: synchronize IOTLB message with dev cleanup
-f46187d14af3 UPSTREAM: vhost: fix info leak due to uninitialized memory
-6619733eab40 UPSTREAM: vhost: fix vhost_vq_access_ok() log check
-167925fc0eff UPSTREAM: vhost: validate log when IOTLB is enabled
-579cd6fe1e70 UPSTREAM: vhost_net: add missing lock nesting notation
-b2696b4a37bd UPSTREAM: vhost: use mutex_lock_nested() in vhost_dev_lock_vqs()
-b53fc49147e2 UPSTREAM: vhost/vsock: fix uninitialized vhost_vsock->guest_cid
-ea183988dee1 UPSTREAM: vhost_net: correctly check tx avail during rx busy polling
-d6c52dda2c08 UPSTREAM: vsock: use new wait API for vsock_stream_sendmsg()
-821984ea0cac UPSTREAM: vsock: cancel packets when failing to connect
-8d30307c8dc9 UPSTREAM: vhost-vsock: add pkt cancel capability
-2b8dd4215e44 UPSTREAM: vsock: track pkt owner vsock
-982b533c5d2b UPSTREAM: vhost: fix initialization for vq->is_le
-7f320a93701c UPSTREAM: vhost/vsock: handle vhost_vq_init_access() error
-d8e26f878c35 UPSTREAM: vsock: lookup and setup guest_cid inside vhost_vsock_lock
-f95e936b327d UPSTREAM: vhost-vsock: fix orphan connection reset
-de7a923e3093 UPSTREAM: vsock/virtio: fix src/dst cid format
-704b8c6108c0 UPSTREAM: VSOCK: Don't dec ack backlog twice for rejected connections
-ddabe560202a UPSTREAM: vhost/vsock: drop space available check for TX vq
-72e3ee7594c8 UPSTREAM: virtio-vsock: fix include guard typo
-613ffe183896 UPSTREAM: vhost/vsock: fix vhost virtio_vsock_pkt use-after-free
-b09cc234f36b UPSTREAM: VSOCK: Use kvfree()
-80090036d471 BACKPORT: vhost: split out vringh Kconfig
-ec5d426be248 UPSTREAM: vhost: drop vringh dependency
-7fcee9753439 UPSTREAM: vhost: drop vringh dependency
-a2a85e6807dc UPSTREAM: vhost: detect 32 bit integer wrap around
-e177c82ed1fa UPSTREAM: VSOCK: Add Makefile and Kconfig
-01a1cf6063b4 UPSTREAM: VSOCK: Introduce vhost_vsock.ko
-60c196454277 UPSTREAM: VSOCK: Introduce virtio_transport.ko
-d5590af888cb BACKPORT: VSOCK: Introduce virtio_vsock_common.ko
-716adf173f7f UPSTREAM: VSOCK: defer sock removal to transports
-3fc44c12b2c4 UPSTREAM: VSOCK: transport-specific vsock_transport functions
-a598d93c2a3a UPSTREAM: vsock: make listener child lock ordering explicit
-0f0ec3accb21 UPSTREAM: vhost: new device IOTLB API
-2fb5f444a82f BACKPORT: vhost: convert pre sorted vhost memory array to interval tree
-ec8d83a0748a UPSTREAM: vhost: introduce vhost memory accessors
-6b9b4adc1feb UPSTREAM: vhost_net: stop polling socket during rx processing
-708df0e257da UPSTREAM: VSOCK: constify vsock_transport structure
-e6fdb474765f UPSTREAM: vhost: lockless enqueuing
-773bac0e1f14 UPSTREAM: vhost: simplify work flushing
-7103ea77d35b UPSTREAM: VSOCK: Only check error on skb_recv_datagram when skb is NULL
-4c634053305d BACKPORT: AF_VSOCK: Shrink the area influenced by prepare_to_wait
-6c81476a7cbc UPSTREAM: vhost_net: basic polling support
-29181c5bfa69 UPSTREAM: vhost: introduce vhost_vq_avail_empty()
-2dd59f910bfd UPSTREAM: vhost: introduce vhost_has_work()
-a5de7503e90d UPSTREAM: vhost: rename vhost_init_used()
-2ab0816efdda UPSTREAM: vhost: rename cross-endian helpers
-6ef11fba4c33 UPSTREAM: vhost: fix error path in vhost_init_used()
-c7c7d1506cb8 UPSTREAM: virtio: make find_vqs() checkpatch.pl-friendly
-3576d75c8de3 UPSTREAM: net: move napi_hash[] into read mostly section
-
-   * packages/apps/COSPapps/
-fdccad3 cospapps: fix derp
-81d9efe cospapps: update Lawnchair config
-
-   * packages/apps/Settings/
-630c0d1629 Revert "Ambient Play: Introduce saving options [2/2]"
-3208462ad9 Merge branch 'pie' of https://github.com/despOSitoROM/packages_apps_Settings into pie
-84b5059d1f Revert "Ambient Play: Add summary to some settings"
-5da4b93b42 settings: more cosp changes
-66b06f6d6a settings: logo should look fine now
-
-   * vendor/cosp/
-726a83a0 vendor: include keyboard
-d0642011 vendor: switch to Lawnchair
-
-   * vendor/pixelstyle/
-3d76c81 pixelstyle: remove Pixel Launcher
-
-   * vendor/xiaomi/
-04310968 sdm845 targets: Regen makefiles and add new targets to build guard
-
-=======================
-     01-15-2019
-=======================
-
-
-   * build/make/
-c14e4aab9 That's why i shouldn't use automatic rebrand
-87b6b9121 Initial COSP changes
-b4618ed3d We are COSP now
-
-   * build/soong/
-1582cdd1 Initial COSP changes
-
-   * frameworks/base/
-af44c54d74c Initial COSP changes
-
-   * packages/apps/COSPapps/
-5ace528 Update Lawnchair to alpha_808
-62ec886 Remove not needed apps
-
-   * packages/apps/Settings/
-553a2b4c1a Derp
-f29f6a4a18 Make it that way
-c5d05d8730 i did an oopsie lol
-68b3c38edd ITS DONE BOIS
-9fa802cabd oof second part bois
-d9a8d48dc8 add nice logo its shit but do i care?
-9e6b2306a3 SystemUpdatePreferenceController: rebrand
-bf44a121e1 Initial COSP changes
-
-   * vendor/cosp/
-60f14392 vendor: include Lawnchair
-5eae4e38 vendor: fix file naming
-08cea93b Initial COSP changes #2
-788d0e07 Initial COSP changes
-
-   * vendor/pixelstyle/
-c666af0 Revert "Introduce our custom provider for Ambient Play"
-
-=======================
-     01-14-2019
-=======================
-
-
-   * frameworks/base/
-7ef5e0f1381 framework: Battery led default value should follow notification led
-23d135738da fonts: Build different fonts.xml if EXCLUDE_SERIF_FONTS is true
-
-   * kernel/xiaomi/whyred/
-acb5ff1905fd ANDROID: cuttlefish_defconfig: remove DM_VERITY_HASH_PREFETCH_MIN_SIZE
-ec8fcb232d83 Revert "ANDROID: dm verity: add minimum prefetch size"
-c69bfa0ff38e ANDROID: f2fs: Complement "android_fs" tracepoint of read path
-
-=======================
-     01-13-2019
-=======================
-
-
-   * development/
-0d9797de8 Remove useless build warning
-
-   * kernel/xiaomi/whyred/
-75db4ab744fb Revert "msm: camera: isp: Handle frame drop due to delay   "
-4d00e6aaf670 Revert "qcacld-3.0: Add bound check for fixed_param->total_num_tx_power_levels"
-80adbddf62e7 Merge branch 'caf-merge' into pie
-70bda97f9bc0 Merge commit 'd65e05938e1446ae5d5026bc18e9b79135e72065' into pie
-884e988905b1 Merge remote-tracking branch 'aosp/android-4.4' into pie
-241f76b17c36 Merge 4.4.170 into android-4.4
-b83b3fa78445 Linux 4.4.170
-1bd63edb92ac power: supply: olpc_battery: correct the temperature units
-b1892669f77f intel_th: msu: Fix an off-by-one in attribute store
-21c7b1377859 genwqe: Fix size check
-5f6ce5ea8393 ceph: don't update importing cap's mseq when handing cap export
-0216bf654af7 iommu/vt-d: Handle domain agaw being less than iommu agaw
-2d7501440715 9p/net: put a lower bound on msize
-c820ac339c98 b43: Fix error in cordic routine
-18451898261b gfs2: Fix loop in gfs2_rbm_find
-bf72973ce165 dlm: memory leaks on error path in dlm_user_request()
-3ed774e59ce5 dlm: lost put_lkb on error path in receive_convert() and receive_unlock()
-27f4aa2a0c12 dlm: possible memory leak on error path in create_lkb()
-a09b8db22851 dlm: fixed memory leaks after failed ls_remove_names allocation
-11e047131fff ALSA: usb-audio: Fix an out-of-bound read in create_composite_quirks
-a5e09a908ea3 ALSA: usb-audio: Avoid access before bLength check in build_audio_procunit()
-83f470ebd75e ALSA: cs46xx: Potential NULL dereference in probe
-557f16c7fe26 crypto: x86/chacha20 - avoid sleeping with preemption disabled
-69c1fd103bbb sunrpc: use SVC_NET() in svcauth_gss_* functions
-192f7ca0c794 sunrpc: fix cache_head leak due to queued request
-6331b9d7ac6c mm, devm_memremap_pages: kill mapping "System RAM" support
-a93d56de4533 mm, devm_memremap_pages: mark devm_memremap_pages() EXPORT_SYMBOL_GPL
-060853fdd434 hwpoison, memory_hotplug: allow hwpoisoned pages to be offlined
-d447cf0ceefa fork: record start_time late
-d15d1677aa32 scsi: zfcp: fix posting too many status read buffers leading to adapter shutdown
-beb2654f07a2 Input: omap-keypad - fix idle configuration to not block SoC idle states
-ebcdd1195ee2 scsi: bnx2fc: Fix NULL dereference in error handling
-987f20645911 xfrm: Fix bucket count reported to userspace
-0769670720e0 checkstack.pl: fix for aarch64
-38a337115896 Input: restore EV_ABS ABS_RESERVED
-88206b0e3042 ARM: imx: update the cpu power up timing setting on i.mx6sx
-c7c77cdf7b49 powerpc: Fix COFF zImage booting on old powermacs
-b76db5ad2f97 spi: bcm2835: Unbreak the build of esoteric configs
-0c53038267a9 x86/kvm/vmx: do not use vm-exit instruction length for fast MMIO when running nested
-c78a5d4a6481 CIFS: Fix error mapping for SMB2_LOCK command which caused OFD lock problem
-a214fe5560e7 MIPS: Align kernel load address to 64KB
-79d02189e782 MIPS: Ensure pmd_present() returns false after pmd_mknotpresent()
-c2b02f925a64 media: vivid: free bitmap_cap when updating std/timings/etc.
-8a92ec92c789 cdc-acm: fix abnormal DATA RX issue for Mediatek Preloader.
-dc1715a2b233 spi: bcm2835: Avoid finishing transfer prematurely in IRQ mode
-4d69a1193957 spi: bcm2835: Fix book-keeping of DMA termination
-1330179228ac spi: bcm2835: Fix race on DMA termination
-aa5cab08cd9a ext4: force inode writes when nfsd calls commit_metadata()
-e270923b3c14 ext4: fix EXT4_IOC_GROUP_ADD ioctl
-84ad8791c9b2 ext4: missing unlock/put_page() in ext4_try_to_write_inline_data()
-6e011c3af91c ext4: fix possible use after free in ext4_quota_enable
-efe22fbaa30d perf pmu: Suppress potential format-truncation warning
-e2f780613e3b KVM: x86: Use jmp to invoke kvm_spurious_fault() from .fixup
-aaf7797da3d4 Input: elan_i2c - add ACPI ID for touchpad in ASUS Aspire F5-573G
-a5d6edaafdcf usb: r8a66597: Fix a possible concurrency use-after-free bug in r8a66597_endpoint_disable()
-bef5854270ba USB: serial: option: add Fibocom NL678 series
-1e7a4f266531 USB: serial: pl2303: add ids for Hewlett-Packard HP POS pole displays
-e9e68f76701c ALSA: hda/tegra: clear pending irq handlers
-64b9976a624d ALSA: hda: add mute LED support for HP EliteBook 840 G4
-31eadb108bf7 ALSA: emux: Fix potential Spectre v1 vulnerabilities
-f56eb9dfd1b0 ALSA: pcm: Fix potential Spectre v1 vulnerability
-e8ed54c8c379 ALSA: emu10k1: Fix potential Spectre v1 vulnerabilities
-8286dcc1d7aa ALSA: rme9652: Fix potential Spectre v1 vulnerability
-f8de5a38cc3b sock: Make sock->sk_stamp thread-safe
-770b0ad5ffe4 gro_cell: add napi_disable in gro_cells_destroy
-c986a25496f5 xen/netfront: tolerate frags with no data
-291d37f7c357 VSOCK: Send reset control packet when socket is partially bound
-04a1c4080cbf vhost: make sure used idx is seen before log in vhost_add_used_n()
-15c17f3654f7 sctp: initialize sin6_flowinfo for ipv6 addrs in sctp_inet6addr_event
-33a083483c24 packet: validate address length if non-zero
-5b4dc608f82a packet: validate address length
-429b64a9eb90 netrom: fix locking in nr_find_socket()
-866408f607ac isdn: fix kernel-infoleak in capi_unlocked_ioctl
-708ae57321cd ipv6: explicitly initialize udp6_addr in udp_sock_create6()
-615b74643bce ieee802154: lowpan_header_create check must check daddr
-ba2f5c18050e ibmveth: fix DMA unmap error in ibmveth_xmit_start error path
-c0e93a6d3613 ax25: fix a use-after-free in ax25_fillin_cb()
-74d6170eb63f ipv4: Fix potential Spectre v1 vulnerability
-6dc50507697c ip6mr: Fix potential Spectre v1 vulnerability
-a2a840d6dcae drm/ioctl: Fix Spectre v1 vulnerabilities
-38b1b66e5796 x86/mtrr: Don't copy uninitialized gentry fields back to userspace
-c866fa26823d Drivers: hv: vmbus: Return -EINVAL for the sys files for unopened channels
-61b4285244c1 gpio: max7301: fix driver for use with CONFIG_VMAP_STACK
-a5c4aa9ca53d mmc: omap_hsmmc: fix DMA API warning
-f2eca86effbe mmc: core: Reset HPI enabled state during re-init and in case of errors
-b0c27dc554ee USB: serial: option: add Telit LN940 series
-339d1495cb37 USB: serial: option: add Fibocom NL668 series
-3181afbf21f9 USB: serial: option: add Simcom SIM7500/SIM7600 (MBIM mode)
-d12f397f129a USB: serial: option: add HP lt4132
-ff3663c771c0 USB: serial: option: add GosunCn ZTE WeLink ME3630
-bdb82196e75b xhci: Don't prevent USB2 bus suspend in state check intended for USB3 only
-8846b1dbfd21 USB: hso: Fix OOB memory access in hso_probe/hso_get_config_data
-
-   * packages/apps/Nfc/
-91847cf2 Automatic translation import
+fd9a9ae pixelstyle: fix bootanimations
 
