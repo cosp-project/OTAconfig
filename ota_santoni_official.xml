@@ -2,10 +2,10 @@
 <Updates>
     <Pie>
         <santoni>
-            <Filename>COSP-190128-OFFICIAL</Filename>
+            <Filename>COSP-190205-OFFICIAL</Filename>
             <BuildTime>1548238272</BuildTime>
-            <RomUrl>https://sia.pixeldrain.com/api/file/yVJwk7cd</RomUrl>
-            <MD5Url>https://sia.pixeldrain.com/api/file/W4Cq0T6x</MD5Url>
+            <RomUrl>https://sia.pixeldrain.com/api/file/uXNG0BSv</RomUrl>
+            <MD5Url>https://sia.pixeldrain.com/api/file/GwEIgUj-</MD5Url>
             <ChangelogUrl>https://raw.githubusercontent.com/cosp-project/OTAconfig/pie/changelog/changelog-santoni.txt</ChangelogUrl>
         </santoni>
     </Pie>
